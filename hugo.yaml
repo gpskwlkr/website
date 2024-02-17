@@ -45,7 +45,7 @@ params:
   enable_site_search: true
   color_scheme: "dark"
   contentTypeName: "posts"
-  adSense:
+  adSenseId: "{{GOOGLE_ADSENSE_ID}}"
   keywords:
     - programming
     - technology
@@ -116,5 +116,3 @@ menu:
 services:
   googleAnalytics:
     ID: "{{GOOGLE_ANALYTICS_ID}}"
-  googleAdSense:
-    ID: "{{GOOGLE_ADSENSE_ID}}"
