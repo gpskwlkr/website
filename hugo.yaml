@@ -1,0 +1,120 @@
+baseURL: https://anakidze.dev/
+languageCode: en-us
+title: "Giorgi Anakidze | Tech Geek"
+author: "Giorgi Anakidze"
+copyright: "Giorgi Anakidze"
+paginate: 10
+theme: "tailwind"
+uglyURLs: false
+canonifyURLs: true
+enableRobotsTXT: true
+
+taxonomies:
+  category: "categories"
+  tag: "tags"
+  series: "series"
+
+markup:
+  highlight:
+    anchorLineNos: false
+    codeFences: true
+    guessSyntax: true
+    hl_Lines: ""
+    hl_inline: false
+    lineAnchors: ""
+    lineNoStart: 1
+    lineNos: false
+    lineNumbersInTable: true
+    noClasses: true
+    noHl: false
+    style: "dracula"
+    tabWidth: 4
+  goldmark:
+    parser:
+      wrapStandAloneImageWithinParagraph: false
+      attribute:
+        block: true
+    renderer:
+      unsafe: true
+
+params:
+  enable_toc: true
+  enable_collapsible_toc: true
+  enable_collapsible_changelogs: false
+  enable_math: true
+  enable_site_search: true
+  color_scheme: "dark"
+  contentTypeName: "posts"
+  adSense:
+  keywords:
+    - programming
+    - technology
+    - databases
+    - c#
+    - mssql
+    - linux
+    - rust
+    - go (golang)
+    - development
+    - software engineering
+    - coding
+    - programming languages
+    - web development
+    - database management
+    - software architecture
+    - system administration
+    - operating systems
+    - cloud computing
+    - algorithms
+    - data structures
+    - code optimization
+    - version control
+    - devops
+    - api development
+    - frontend development
+    - backend development
+    - full-stack development
+    - mobile development
+    - game development
+    - embedded systems
+  description: "Giorgi Anakidze's blog offers insights into programming, technology, and databases. Discover articles on C#, MSSQL, Linux, Rust, Go (Golang), and more. Stay updated on software engineering, coding best practices, and software architecture."
+  header:
+    logo: "logo_new.png"
+  footer:
+    since: 2024
+    poweredby: true
+  social_media:
+    items:
+      - enabled: true
+        title: "Github"
+        icon: "brand-github"
+        link: "https://github.com/gpskwlkr"
+      - enabled: true
+        title: "LinkedIn"
+        icon: "brand-linkedin"
+        link: "https://www.linkedin.com/in/giorgi-anakidze/"
+      - enabled: true
+        title: "Twitter"
+        icon: "brand-twitter"
+        link: "https://twitter.com/gpskwlkr_"
+
+menu:
+  main:
+    - name: "Articles"
+      pageRef: "/"
+      weight: 10
+    - name: "Tags"
+      pageRef: "/tags"
+      weight: 20
+    - name: "Categories"
+      pageRef: "/categories"
+      weight: 30
+    - name: "About"
+      pageRef: "/about"
+      weight: 40
+
+services:
+  googleAnalytics:
+    ID: "{{GOOGLE_ANALYTICS_ID}}"
+  googleAdSense:
+    ID: "{{GOOGLE_ADSENSE_ID}}"
