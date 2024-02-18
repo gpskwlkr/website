@@ -4,6 +4,7 @@ date = 2024-02-13
 draft = false 
 tags = ["dotnet", "csharp", ".net", "benchmark"]
 categories = ["Back End", "Guides"]
+keywords = ["BenchmarkDotnet", ".NET application", "performance measurement", "migrating project", ".NET 5", ".NET 8", "benchmarking", "RuntimeMoniker", "targeting multiple versions", "[GlobalSetup]", "[Benchmark]", "setup methods", "helper methods", "identifying methods", "Baseline parameter", "creating benchmarks", "BenchmarkDotnet templates", "CLI", "Benchmark results", "SHA256", "MD5", "arithmetic mean", "confidence interval", "standard deviation", "10x engineer", "accuracy"]
 +++
 
 {{<img src="/images/benchmark_meme.webp" align="center" alt="Meme about benchmarking with Console.WriteLine">}} <br />

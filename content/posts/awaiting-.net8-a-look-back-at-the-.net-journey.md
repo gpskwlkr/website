@@ -4,7 +4,7 @@ date = 2023-09-23
 draft = false 
 tags = ["dotnet", "csharp", ".net"]
 categories = ["Back End", "dotnet"]
-keywords = ["dotnet", "csharp", ".net", "dotnet 8", ".net 8", ".net development", ".net 8 features", ".net framework evolution", "history of .net", ".net version updates", "future of .net", "microsoft .net platform", "software development with .net", ".net programming language", ".net ecosystem evolution"]
+keywords = ["Tech world", ".NET 8", "C#", ".NET", "Microsoft", "software development", "web services", "desktop applications", "CLR", "BCL", "ASP.NET", "ADO.NET", "Windows Forms", "multiple languages", "evolution", "milestones", ".NET Framework", "C# 1.0", "Object-Oriented", "syntax", "garbage collection", "type-safety", "declarative programming", ".NET 5", ".NET Core", "cross-platform support", ".NET 6", ".NET 7", "performance improvements", ".NET MAUI", "GUI applications", "cross-platform", "Linux", ".NET 8 RC1", "Native AOT", "Blazor improvements", "Entity Framework updates", "benchmarks", "transformative experience", "developers"]
 +++
 
 {{< img src="/images/dotnet.webp" align="center" alt=".NET logo" >}}<br />

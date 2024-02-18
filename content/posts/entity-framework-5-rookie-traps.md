@@ -4,7 +4,7 @@ date = 2023-09-26
 draft = false 
 tags = ["database"]
 categories = ["Database Development","Back End"]
-keywords = ["entity framework 5", "entity framework pitfalls", "entity framework beginner mistakes", "entity framework common errors", "entity framework best practices", "ef5 performance issues", "data access with ef5", "entity framework data modeling", "entity framework database queries", "ef5 development tips"]
+keywords = ["Entity Framework", "EF", ".NET", "beginner developer", "job requirements", "guides", "benefits", "caveats", "DB", "Code-First", "nvarchar(max)", "performance", "indexes", "data retrieval", "Lazy Loading", "Eager Loading", "N+1 problem", "Migrations", "CLI", "SQL", "JOIN operations", "Security concerns", "RAW SQL", "SQLParameter class", "DbContext", "Dapper", "SQL Injection attacks"]
 +++
 
 {{<img src="/images/entity-framework.webp" align="center" alt="Entity Framework logo">}}<br />

@@ -4,7 +4,7 @@ date = 2023-09-29
 draft = false
 tags = ["neon", "cloudflare", "database"]
 categories = ["Database development", "Back End"]
-keywords = ["free database tiers", "planet-scale database", "cloudflare d1", "xata database", "fauna database", "neon database", "cost-effective databases", "cloud database solutions", "database scalability", "scalable data storage solutions", "free database options", "budget-friendly database services", "database management for startups", "cloud-based data storage", "low-cost database solutions"]
+keywords = ["database", "PlanetScale", "Cloudflare D1", "Xata", "Fauna", "Neon", "serverless platform", "MySQL", "SQLite database", "Cloudflare Workers", "PostgreSQL", "ElasticSearch", "document databases", "MongoDB", "serverless option", "Rust", "free tier", "storage", "reads per month", "writes per month", "production branch", "development branch", "reads per day", "writes per day", "total records", "branches per database", "requests per second", "TROs", "TWOs", "GraphQL API", "data branching", "active time per month", "history retention", "PostgreSQL version", "server location"]
 +++
 
 {{<img src="/images/database.webp" align="center" alt="General photo of a database">}} <br />
