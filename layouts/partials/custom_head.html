@@ -1,0 +1,11 @@
+<!-- Partytown Setup -->
+<script type="text/javascript">
+  partytown = {
+    forward: ["dataLayer.push"],
+  };
+</script>
+<script type="text/javascript">
+  {{ $partytownJs := resources.Get "js/partytown.js" | js.Build | minify }}
+  {{- $partytownJs.Content | safeJS }}
+</script>
+<!-- End Partytown -->
