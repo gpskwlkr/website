@@ -1,6 +1,8 @@
 <figure {{ with .Get "class" }}class="{{ . }}"{{ end }}>
   {{ with .Get "link" }}<a href="{{ . }}">{{ end }}
-    <img loading="lazy" src="{{ .Get "src" }}" {{ if or (.Get "alt") (.Get "caption") }}alt="{{ with .Get "alt" }}{{ . }}{{ else }}{{ .Get "caption" }}{{ end }}"{{ end }} width="600px" height="300px" style="display: block; float: none; margin-left: auto; margin-right: auto;"
+{{ $loading := .Get "loading" | default "lazy" }}
+
+<img loading="{{ $loading }}" src="{{ .Get "src" }}" {{ if or (.Get "alt") (.Get "caption") }}alt="{{ with .Get "alt" }}{{ . }}{{ else }}{{ .Get "caption" }}{{ end }}"{{ end }} width="600px" height="300px" style="display: block; float: none; margin-left: auto; margin-right: auto;"
 />
     {{ if .Get "link" }}</a>{{ end }}
     {{ if or (or (.Get "title") (.Get "caption")) (.Get "attr") }}
@@ -15,4 +17,3 @@
       </figcaption>
   {{ end }}
 </figure>
-

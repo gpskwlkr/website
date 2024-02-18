@@ -19,7 +19,7 @@ While the tech world awaits for .NET 8, it’s an opportune moment to take a ste
 
 ## .NET Framework 1.0
 
-{{<img src="/images/dotnet_old.webp" alt="Old .NET logo">}}
+{{<img loading="eager" src="/images/dotnet_old.webp" alt="Old .NET logo">}}
 
 Released in 2002, **.NET Framework 1.0** was Microsoft's answer to a changing software development landscape, aiming to provide a unified environment for developing web services, desktop applications, and other software. The first release included many of the key features that are still being used today, even if they’ve changed as time went by, these were:
 
@@ -44,7 +44,7 @@ Introduced alongside .NET Framework, C# 1.0 became one of the primary languages 
 
 ## What has changed
 
-{{<img src="/images/dotnet_5.webp" alt="Image displaying .NET 5 features">}}
+{{<img loading="lazy" src="/images/dotnet_5.webp" alt="Image displaying .NET 5 features">}}
 
 Although **.NET Framework** and **C#** went a long way and there was a ton of features added year to year, the major changed happened in November, 2020, when **.NET 5** was released. You might be asking, what did it change for us, developers? Well, let’s see:
 
