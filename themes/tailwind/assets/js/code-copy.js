@@ -12,6 +12,7 @@
     button.className = "right-1 top-1 absolute";
     button.type = "button";
     button.innerHTML = copyIcon;
+    button.ariaLabel = "Copy";
     button.addEventListener("click", () => copyCodeToClipboard(button, highlightDiv));
     highlightDiv.insertBefore(button, highlightDiv.firstChild);
   }
