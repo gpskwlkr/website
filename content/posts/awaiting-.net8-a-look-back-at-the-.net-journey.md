@@ -11,7 +11,7 @@ categories = ["Back End", "News"]
 keywords = ["Tech world", ".NET 8", "C#", ".NET", "Microsoft", "software development", "web services", "desktop applications", "CLR", "BCL", "ASP.NET", "ADO.NET", "Windows Forms", "multiple languages", "evolution", "milestones", ".NET Framework", "C# 1.0", "Object-Oriented", "syntax", "garbage collection", "type-safety", "declarative programming", ".NET 5", ".NET Core", "cross-platform support", ".NET 6", ".NET 7", "performance improvements", ".NET MAUI", "GUI applications", "cross-platform", "Linux", ".NET 8 RC1", "Native AOT", "Blazor improvements", "Entity Framework updates", "benchmarks", "transformative experience", "developers"]
 +++
 
-{{< img src="/images/dotnet.webp" align="center" alt=".NET logo" >}}<br />
+{{<img src="/images/dotnet.webp" align="center" alt=".NET logo" >}}<br />
 
 While the tech world awaits for .NET 8, it’s an opportune moment to take a step back and reflect on the transformative journey of C# and .NET. <!--more--> Their evolution was not just a testament to Microsoft’s vision but also the dynamic and ever-changing demands of developers worldwide. This article offers a whirlwind tour of their metamorphosis, highlighting key milestones, and setting the stage for the exciting innovations .NET 8 promises to bring.
 
@@ -19,7 +19,7 @@ While the tech world awaits for .NET 8, it’s an opportune moment to take a ste
 
 ## .NET Framework 1.0
 
-{{<img loading="eager" src="/images/dotnet_old.webp" alt="Old .NET logo">}}
+{{<img src="/images/dotnet_old.webp" alt="Old .NET logo">}}
 
 Released in 2002, **.NET Framework 1.0** was Microsoft's answer to a changing software development landscape, aiming to provide a unified environment for developing web services, desktop applications, and other software. The first release included many of the key features that are still being used today, even if they’ve changed as time went by, these were:
 
@@ -44,7 +44,7 @@ Introduced alongside .NET Framework, C# 1.0 became one of the primary languages 
 
 ## What has changed
 
-{{<img loading="lazy" src="/images/dotnet_5.webp" alt="Image displaying .NET 5 features">}}
+{{<img src="/images/dotnet_5.webp" alt="Image displaying .NET 5 features">}}
 
 Although **.NET Framework** and **C#** went a long way and there was a ton of features added year to year, the major changed happened in November, 2020, when **.NET 5** was released. You might be asking, what did it change for us, developers? Well, let’s see:
 
