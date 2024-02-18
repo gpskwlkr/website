@@ -1,7 +1,11 @@
 +++
 title = 'Terms and Conditions'
 date = 2024-02-17T22:34:40+04:00
-draft = false 
+draft = false
+showPublicationDate = false 
+showReadingTime = false 
+toc = false 
+comments = false
 +++
 
 Please read these Terms of Service (“Terms”, “Terms of Service”) carefully before using the https://anakidze.dev website (the “Service”) operated by Giorgi Anakidze (“us”, “we”, or “our”).

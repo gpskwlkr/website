@@ -2,6 +2,10 @@
 title = 'Zero Cost Database Magic'
 date = 2023-09-29
 draft = false
+showPublicationDate = true
+showReadingTime = true
+toc = true
+comments = true
 tags = ["neon", "cloudflare", "database"]
 categories = ["Database development", "Back End"]
 keywords = ["database", "PlanetScale", "Cloudflare D1", "Xata", "Fauna", "Neon", "serverless platform", "MySQL", "SQLite database", "Cloudflare Workers", "PostgreSQL", "ElasticSearch", "document databases", "MongoDB", "serverless option", "Rust", "free tier", "storage", "reads per month", "writes per month", "production branch", "development branch", "reads per day", "writes per day", "total records", "branches per database", "requests per second", "TROs", "TWOs", "GraphQL API", "data branching", "active time per month", "history retention", "PostgreSQL version", "server location"]

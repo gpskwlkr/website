@@ -1,7 +1,11 @@
 +++
 title = 'Privacy Policy'
 date = 2024-02-17T22:30:26+04:00
-draft = false 
+draft = false
+showPublicationDate = false 
+showReadingTime = false 
+toc = false 
+comments = false 
 +++
 
 Giorgi Anakidze operates the https://anakidze.dev website, which provides the SERVICE.

@@ -2,6 +2,9 @@
 title = 'Entity Framework 5 Rookie Traps'
 date = 2023-09-26
 draft = false 
+showReadingTime = true
+showPublicationDate = true
+comments = true
 tags = ["database"]
 categories = ["Database Development","Back End"]
 keywords = ["Entity Framework", "EF", ".NET", "beginner developer", "job requirements", "guides", "benefits", "caveats", "DB", "Code-First", "nvarchar(max)", "performance", "indexes", "data retrieval", "Lazy Loading", "Eager Loading", "N+1 problem", "Migrations", "CLI", "SQL", "JOIN operations", "Security concerns", "RAW SQL", "SQLParameter class", "DbContext", "Dapper", "SQL Injection attacks"]
