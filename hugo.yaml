@@ -7,7 +7,7 @@ paginate: 10
 theme: "tailwind"
 uglyURLs: false
 canonifyURLs: true
-enableRobotsTXT: true
+enableRobotsTXT: false
 
 taxonomies:
   category: "categories"
