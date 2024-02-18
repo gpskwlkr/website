@@ -1,13 +1,35 @@
 {{ if ne .Params.Comments false }}
 
-<script
-  src="https://utteranc.es/client.js"
-  repo="gpskwlkr/website"
-  issue-term="pathname"
-  theme="github-dark"
-  crossorigin="anonymous"
-  async
-  defer
-></script>
+<script>
+    function createComments() {
+        setTimeout(() => {
+            const themeName = localStorage.getItem('theme')
+            const newScriptTag = document.createElement('script');
+            newScriptTag.src = "https://utteranc.es/client.js";
+            newScriptTag.setAttribute('repo', 'gpskwlkr/website');
+            newScriptTag.setAttribute('issue-term', 'pathname');
+            newScriptTag.setAttribute('crossorigin', 'anonymous');
+            newScriptTag.setAttribute('async', '');
+            newScriptTag.setAttribute('defer', '');
+            newScriptTag.setAttribute('data-utterances', '');
+            newScriptTag.setAttribute('theme', `github-${themeName}`);
+            newScriptTag.setAttribute('id', 'utterances-comments');
+            document.getElementsByClassName("comments-container")[0].appendChild(newScriptTag);
+        }, 0)
+    }
+
+    (function () {
+        const themeToggle = document.querySelector('.darkmode-toggle input');
+
+        createComments();
+
+        themeToggle.addEventListener('change', () => {
+            const comments = document.querySelector('.utterances');
+            comments.remove();
+            createComments();
+        })
+
+    })()
+</script>
 
 {{ end }}

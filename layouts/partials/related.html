@@ -1,0 +1,14 @@
+{{ $related := .Site.RegularPages.Related . | first 5 }}
+{{ with $related }}
+<hr class="border-gray-300 dark:border-gray-600 my-4">
+<h3 class="text-lg font-bold mb-2 text-gray-800 dark:text-slate-300">See Also</h3>
+<div class="bg-gray-100 dark:bg-gray-800 dark:text-slate-300 p-4 rounded-lg mb-4">
+    <ul class="list-disc pl-5">
+        {{ range . }}
+        <li><a href="{{ .RelPermalink }}" class="text-gray-800 dark:text-slate-300 no-underline hover:underline ml-2">{{
+                .LinkTitle
+                }}</a></li>
+        {{ end }}
+    </ul>
+</div>
+{{ end }}
