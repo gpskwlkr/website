@@ -81,6 +81,6 @@ It certainly sounds not as good as previous ones, but brace yourselves, next one
 
 By far, **Neon** is my favourite and make sure to check it for yourself as well at - [**Neon**](https://neon.tech/).
 
----
+<hr class="border-gray-300 dark:border-gray-600 my-4">
 
 Thank you for taking the time to read! :)

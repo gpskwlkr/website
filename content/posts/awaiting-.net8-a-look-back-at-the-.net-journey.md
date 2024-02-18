@@ -68,6 +68,6 @@ In terms of major changes, there were not so much features offered with **.NET 6
 
 Even though **.NET 8** is set to release in **November, 2023**, we already can try it out! Yes, the **RC1** is already available and it has a lot to offer, including things like **Native AOT** for Web applications, **Blazor** improvements and **Entity Framework** updates, make sure to check out all the [benchmarks](https://devblogs.microsoft.com/dotnet/performance-improvements-in-net-8/) (really big performance improvements) and [RC1 notes.](https://devblogs.microsoft.com/dotnet/announcing-dotnet-8-rc1/) From the revolutionary advancements in Web application development to performance leaps, **.NET 8** promises a transformative experience for developers. So why wait? Dive into the **RC1** today and be among the first to feel the power of the future of **.NET**!
 
----
+<hr class="border-gray-300 dark:border-gray-600 my-4">
 
 Thank you for taking the time to read! :)

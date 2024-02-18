@@ -228,6 +228,6 @@ As you see, your parameter is directly passed to the SELECT statement. It is not
 
 There will never be a way that’s always good or bad, and you can’t say any of those about EF as well. You have to decide what’s best for your application and how are you going to use it. If you have a small and simple application you might use Entity Framework and won’t even need RAW SQL execution. If you’re building something more complex, you might want to look at Dapper, which gives you the ability to execute RAW SQL and Stored Procedures while converting all parameters to SQLParameter class, guarding your DB from SQL Injection attacks. I might write some article on Dapper as well later, but for now, that’s all.
 
----
+<hr class="border-gray-300 dark:border-gray-600 my-4">
 
 Thank you for taking the time to read! :)

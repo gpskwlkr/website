@@ -232,6 +232,6 @@ This table basically shows us comparison of these two algorithms for each versio
 
 While BenchmarkDotnet will not supercharge your code to run faster or make you a 10x engineer, it’s nice to have in your toolbox. I remember making monstrosities out of stopwatches and `Console.WriteLine` just to compare the runtime speed of several methods, we’ve all been there and I’m pretty sure you can’t reach the same level of accuracy with those.
 
----
+<hr class="border-gray-300 dark:border-gray-600 my-4">
 
 Thank you for taking the time to read! :)

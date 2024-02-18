@@ -3,7 +3,8 @@
 <script>
     function createComments() {
         setTimeout(() => {
-            const themeName = localStorage.getItem('theme') ?? "dark";
+            const toggleOption = localStorage.getItem('theme') ?? "dark";
+            const themeName = toggleOption === 'light' ? "github-light" : "dark-blue";
             const newScriptTag = document.createElement('script');
             newScriptTag.src = "https://utteranc.es/client.js";
             newScriptTag.setAttribute('repo', 'gpskwlkr/website');
@@ -12,7 +13,7 @@
             newScriptTag.setAttribute('async', '');
             newScriptTag.setAttribute('defer', '');
             newScriptTag.setAttribute('data-utterances', '');
-            newScriptTag.setAttribute('theme', `github-${themeName}`);
+            newScriptTag.setAttribute('theme', themeName);
             newScriptTag.setAttribute('id', 'utterances-comments');
             document.getElementsByClassName("comments-container")[0].appendChild(newScriptTag);
         }, 0)
