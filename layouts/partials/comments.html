@@ -3,7 +3,7 @@
 <script>
     function createComments() {
         setTimeout(() => {
-            const themeName = localStorage.getItem('theme')
+            const themeName = localStorage.getItem('theme') ?? "dark";
             const newScriptTag = document.createElement('script');
             newScriptTag.src = "https://utteranc.es/client.js";
             newScriptTag.setAttribute('repo', 'gpskwlkr/website');
