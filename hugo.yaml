@@ -122,3 +122,15 @@ menu:
 services:
   googleAnalytics:
     ID: "{{GOOGLE_ANALYTICS_ID}}"
+
+module:
+  mounts:
+    - source: "assets"
+      target: "assets"
+    - source: "node_modules/@builder.io/partytown/lib/partytown.js"
+      target: "assets/js/partytown.js"
+    - source: "static"
+      target: "static"
+    - source: "node_modules/@builder.io/partytown/lib"
+      target: "static/~partytown"
+      excludeFiles: "debug"
