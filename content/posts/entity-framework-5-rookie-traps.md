@@ -1,5 +1,5 @@
 +++
-title = 'Entity Framework 5 Rookie Traps'
+title = 'Entity Framework: 5 Rookie Traps'
 date = 2023-09-26
 draft = false 
 showReadingTime = true
