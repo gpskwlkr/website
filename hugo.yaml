@@ -14,6 +14,11 @@ taxonomies:
   tag: "tags"
   series: "series"
 
+sitemap:
+  changeFreq: "always"
+  filename: sitemap.xml
+  priority: -1
+
 markup:
   highlight:
     anchorLineNos: false
