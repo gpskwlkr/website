@@ -118,7 +118,7 @@ menu:
     - name: "About"
       pageRef: "/about"
       weight: 40
-    - name: "T & C"
+    - name: "T&C"
       pageRef: "/terms-and-conditions"
       weight: 50
     - name: "Privacy"
