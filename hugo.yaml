@@ -41,7 +41,6 @@ params:
   enable_toc: true
   enable_collapsible_toc: true
   enable_collapsible_changelogs: false
-  subtitle: "| Tech Geek"
   enable_math: true
   enable_site_search: true
   color_scheme: "dark"
