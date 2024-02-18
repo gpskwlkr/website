@@ -82,8 +82,8 @@ params:
     - mobile development
     - game development
     - embedded systems
-  description: "Dive into Giorgi Anakidze's blog for expert insights on programming, technology, and databases. Discover articles on C#, MSSQL, Linux, Rust, Go (Golang), and more. Stay updated on software engineering, coding best practices, and software architecture"
-  meta_description: "Explore Giorgi Anakidze's blog for expert insights on programming, technology, and databases. Dive into articles covering C#, MSSQL, Linux, Rust, Go (Golang), and more. Stay ahead with updates on software engineering, coding best practices, and software architecture."
+  description: ".NET • MSSQL • Linux • Rust • GoLang"
+  meta_description: ".NET • MSSQL • Linux • Rust • GoLang"
   header:
     logo: "logo_new.png"
   footer:

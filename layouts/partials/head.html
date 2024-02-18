@@ -3,7 +3,7 @@
 <meta name="description" content="{{ site.Params.meta_description }}" />
 <meta name="keywords" content="{{ with .Params.Keywords }}{{ delimit . " ," }}{{ else }}{{ $.Site.Params.Keywords }}{{
     end }}" />
-<meta name="robots" content="noodp" />
+<meta name="robots" content="index,follow" />
 <meta property="og:title" content="{{ .Title }}" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="{{ .Permalink }}" />
