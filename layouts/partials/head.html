@@ -8,8 +8,12 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="{{ .Permalink }}" />
 <meta property="og:image" content="https://vercel-og-umber.vercel.app/api/og?title={{ .Title }}" />
-<meta property="twitter:image" content="https://vercel-og-umber.vercel.app/api/twitter?title={{ .Title }}" />
-{{ template "_internal/twitter_cards.html" . }}
+<meta property="twitter:image" content="https://vercel-og-umber.vercel.app/api/og?title={{ .Title }}" />
+<meta property="twitter:image:src" content="https://vercel-og-umber.vercel.app/api/og?title={{ .Title }}" />
+<meta property="twitter:site" content="@gpskwlkr_" />
+<meta property="twitter:creator" content="@gpskwlkr_" />
+<meta property="twitter:description" content="{{ site.Params.meta_description }}" />
+<meta property="twitter:card" content="summary_large_image" />
 
 <link rel="canonical" href="{{ .Permalink }}" />
 
