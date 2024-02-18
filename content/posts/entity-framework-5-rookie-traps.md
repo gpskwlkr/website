@@ -5,7 +5,7 @@ draft = false
 showReadingTime = true
 showPublicationDate = true
 comments = true
-tags = ["database"]
+tags = ["database", "dotnet"]
 categories = ["Database Development","Back End"]
 keywords = ["Entity Framework", "EF", ".NET", "beginner developer", "job requirements", "guides", "benefits", "caveats", "DB", "Code-First", "nvarchar(max)", "performance", "indexes", "data retrieval", "Lazy Loading", "Eager Loading", "N+1 problem", "Migrations", "CLI", "SQL", "JOIN operations", "Security concerns", "RAW SQL", "SQLParameter class", "DbContext", "Dapper", "SQL Injection attacks"]
 +++

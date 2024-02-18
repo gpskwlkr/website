@@ -7,7 +7,7 @@ showReadingTime = true
 toc = true
 comments = true
 tags = ["dotnet", "csharp", ".net"]
-categories = ["Back End", "dotnet"]
+categories = ["Back End", "News"]
 keywords = ["Tech world", ".NET 8", "C#", ".NET", "Microsoft", "software development", "web services", "desktop applications", "CLR", "BCL", "ASP.NET", "ADO.NET", "Windows Forms", "multiple languages", "evolution", "milestones", ".NET Framework", "C# 1.0", "Object-Oriented", "syntax", "garbage collection", "type-safety", "declarative programming", ".NET 5", ".NET Core", "cross-platform support", ".NET 6", ".NET 7", "performance improvements", ".NET MAUI", "GUI applications", "cross-platform", "Linux", ".NET 8 RC1", "Native AOT", "Blazor improvements", "Entity Framework updates", "benchmarks", "transformative experience", "developers"]
 +++
 
