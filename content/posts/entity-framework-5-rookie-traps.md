@@ -42,7 +42,7 @@ public DbSet<User> Users { get; set; }
 
 And since you’re a beginner you might think it’s completely fine, but this is what you end up having in your database:
 
-{{<img src="/images/nvarchar-max.webp" align="center" alt="Image showing nvarchar(max) in table">}}
+{{<img src="/images/nvarchar-max.webp" align="center" alt="Table displaying a column with data type nvarchar(max)">}}
 
 As you might see, if you don’t specify any length to your string fields, EF will default it to nvarchar(max) and you might be asking, so what? What’s wrong with that? I have plenty of reasons why you should never use it unless it’s really necessary for business needs:
 
@@ -227,7 +227,7 @@ As you see, your parameter is directly passed to the SELECT statement. It is not
 
 ## Conclusion
 
-{{<img src="/images/dapper-meme.webp" align="center" alt="Meme about junior dev looking to Dapper">}}
+{{<img src="/images/dapper-meme.webp" align="center" alt="A meme depicting a junior developer eagerly looking at Dapper documentation">}}
 
 There will never be a way that’s always good or bad, and you can’t say any of those about EF as well. You have to decide what’s best for your application and how are you going to use it. If you have a small and simple application you might use Entity Framework and won’t even need RAW SQL execution. If you’re building something more complex, you might want to look at Dapper, which gives you the ability to execute RAW SQL and Stored Procedures while converting all parameters to SQLParameter class, guarding your DB from SQL Injection attacks. I might write some article on Dapper as well later, but for now, that’s all.
 

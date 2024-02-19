@@ -11,10 +11,10 @@ categories = ["Back End", "Guides"]
 keywords = ["BenchmarkDotnet", ".NET application", "performance measurement", "migrating project", ".NET 5", ".NET 8", "benchmarking", "RuntimeMoniker", "targeting multiple versions", "[GlobalSetup]", "[Benchmark]", "setup methods", "helper methods", "identifying methods", "Baseline parameter", "creating benchmarks", "BenchmarkDotnet templates", "CLI", "Benchmark results", "SHA256", "MD5", "arithmetic mean", "confidence interval", "standard deviation", "10x engineer", "accuracy"]
 description = "Imagine perfecting your .NET application only to struggle with performance measurement. BenchmarkDotnet resolves this, offering developers a streamlined solution for precise benchmarking."
 coverImage = "/images/benchmark_meme.webp"
-coverImageAltText = "Meme about benchmarking with Console.WriteLine"
+coverImageAltText = "A humorous meme showing someone attempting to benchmark using Console.WriteLine"
 +++
 
-{{<img src="/images/benchmark_meme.webp" align="center" alt="Meme about benchmarking with Console.WriteLine">}} <br>
+{{<img src="/images/benchmark_meme.webp" align="center" alt="A humorous meme showing someone attempting to benchmark using Console.WriteLine">}} <br>
 
 Imagine perfecting your .NET application only to struggle with performance measurement. BenchmarkDotnet resolves this, offering developers a streamlined solution for precise benchmarking. Are you in your way to migrating the project from .NET 5 to .NET 8? Is it really worth it? BenchmarkDotnet allows you to test your most time or memory consuming methods against multiple versions of .NET framework with ease and decide whether you really should do it.
 

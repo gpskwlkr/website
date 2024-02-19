@@ -11,11 +11,11 @@ categories = ["Back End", "Guides", "Architecture"]
 keywords = ["message brokers", "message broker definition", "message broker functionality", "message broker use cases", "how message brokers work", "advantages of message brokers", "message broker benefits", "why use message brokers", "messaging middleware", "enterprise messaging systems", "message queueing systems", "distributed messaging", "real-time messaging", "asynchronous messaging", "message routing", "message delivery guarantees", "message durability", "scalability with message brokers", "fault tolerance in message brokers", "message broker architectures", "high availability messaging", "message broker comparison", "message broker features", "message broker applications", "message broker deployment", "message broker scalability", "message broker reliability"]
 description = "If you're into microservices, you'll eventually have to deal with message brokers. Getting ready for this switch will definitely boost your confidence and make you feel more prepared."
 coverImage = "/images/message-brokers-pt1.webp"
-coverImageAltText = "Meme about message brokers"
+coverImageAltText = "A meme where one person gives another person a piece of paper with text, likely related to message brokers"
 loading = "eager"
 +++
 
-{{<img src="/images/message-brokers-pt1.webp" alt="Meme about message brokers" >}} <br>
+{{<img src="/images/message-brokers-pt1.webp" alt="A meme where one person gives another person a piece of paper with text, likely related to message brokers" >}} <br>
 
 If you're into microservices, you'll eventually have to deal with message brokers. Getting ready for this switch will definitely boost your confidence and make you feel more prepared.
 
@@ -42,13 +42,13 @@ Let's dig into each of them.
 
 ### Point to point messaging
 
-{{<img src="/images/point-to-point.webp" alt="Illustration showing point-to-point messaging">}}
+{{<img src="/images/point-to-point.webp" alt="An image depicting a schema of point-to-point messaging">}}
 
 With **Point to point messaging** each message in the queue is sent only to one recipient and is consumed only once. This distribution pattern is usually used in systems which require one-to-one relationship, example of which could be financial transaction processing. In such cases, both, senders and recipients need a guarantee, that each payment will be sent once only.
 
 ### Publish/subscribe messaging {#publish-subscribe-messaging}
 
-{{<img src="/images/publish-subscribe-messaging.webp" alt="Illustration showing publish-subscribe messaging">}}
+{{<img src="/images/publish-subscribe-messaging.webp" alt="An image illustrating the schema of publish-subscribe messaging">}}
 
 If you're using **Publish/subscribe messaging**, you may have one message consumed by multiple clients, or if using the right terms, subscribers. With this method, your producer publishes a message to a topic, where one or more subscribers might be waiting for it. This resembles one-to-many relationship, while one producer has many subscribers.
 
