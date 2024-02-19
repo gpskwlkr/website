@@ -5,8 +5,8 @@
     };
 </script>
 <script>
-    {{$partytownJs:= resources.Get "js/partytown.js" | js.Build | minify} }
-    {{- $partytownJs.Content | safeJS} }
+    {{ $partytownJs:= resources.Get "js/partytown.js" | js.Build | minify }}
+    {{- $partytownJs.Content | safeJS }}
 </script>
 <!-- End Partytown -->
 
