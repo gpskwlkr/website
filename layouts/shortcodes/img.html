@@ -2,8 +2,7 @@
   {{ with .Get "link" }}<a href="{{ . }}">{{ end }}
 {{ $loading := .Get "loading" | default "lazy" }}
 
-<img loading="{{ $loading }}" src="{{ .Get "src" }}" {{ if or (.Get "alt") (.Get "caption") }}alt="{{ with .Get "alt" }}{{ . }}{{ else }}{{ .Get "caption" }}{{ end }}"{{ end }} width="600" height="300" style="display: block; float: none; margin-left: auto; margin-right: auto;"
-/>
+<img loading="{{ $loading }}" src="{{ .Get "src" }}" {{ if or (.Get "alt") (.Get "caption") }}alt="{{ with .Get "alt" }}{{ . }}{{ else }}{{ .Get "caption" }}{{ end }}"{{ end }} width="600" height="300" style="display: block; float: none; margin-left: auto; margin-right: auto;">
     {{ if .Get "link" }}</a>{{ end }}
     {{ if or (or (.Get "title") (.Get "caption")) (.Get "attr") }}
       <figcaption>{{ if isset .Params "title" }}
