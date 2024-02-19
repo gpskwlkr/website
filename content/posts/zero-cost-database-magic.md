@@ -9,11 +9,14 @@ comments = true
 tags = ["neon", "cloudflare", "database", "backend"]
 categories = ["Database development", "Back End"]
 keywords = ["database", "PlanetScale", "Cloudflare D1", "Xata", "Fauna", "Neon", "serverless platform", "MySQL", "SQLite database", "Cloudflare Workers", "PostgreSQL", "ElasticSearch", "document databases", "MongoDB", "serverless option", "Rust", "free tier", "storage", "reads per month", "writes per month", "production branch", "development branch", "reads per day", "writes per day", "total records", "branches per database", "requests per second", "TROs", "TWOs", "GraphQL API", "data branching", "active time per month", "history retention", "PostgreSQL version", "server location"]
+description = "Whether you’re a hobbyist or a professional developer, at some point you’re going to need a database."
+coverImage = "/images/database.webp"
+coverImageAltText = "General photo of a database"
 +++
 
 {{<img src="/images/database.webp" align="center" alt="General photo of a database">}} <br />
 
-Whether you’re a hobbyist or a professional developer, at some point you’re going to need a database. <!--more--> We all know the famous solutions like AWS, Azure, or maybe something that’s more affordable like Linode or DigitalOcean, but what if you only need a database to test some of your ideas? Spinning up your own instance with Docker or just installing it locally may not always be an option, I wish there were some database services that would be performant enough for testing your ideas and also were free… Well, there are and in this article, I’m going to show off 5 of them, so you can choose the best one for your project!
+Whether you’re a hobbyist or a professional developer, at some point you’re going to need a database. We all know the famous solutions like AWS, Azure, or maybe something that’s more affordable like Linode or DigitalOcean, but what if you only need a database to test some of your ideas? Spinning up your own instance with Docker or just installing it locally may not always be an option, I wish there were some database services that would be performant enough for testing your ideas and also were free… Well, there are and in this article, I’m going to show off 5 of them, so you can choose the best one for your project!
 
 ## PlanetScale
 

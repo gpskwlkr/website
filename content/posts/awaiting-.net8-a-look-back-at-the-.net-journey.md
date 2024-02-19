@@ -9,11 +9,14 @@ comments = true
 tags = ["dotnet", "csharp", ".net", "backend", "news"]
 categories = ["Back End", "News"]
 keywords = ["Tech world", ".NET 8", "C#", ".NET", "Microsoft", "software development", "web services", "desktop applications", "CLR", "BCL", "ASP.NET", "ADO.NET", "Windows Forms", "multiple languages", "evolution", "milestones", ".NET Framework", "C# 1.0", "Object-Oriented", "syntax", "garbage collection", "type-safety", "declarative programming", ".NET 5", ".NET Core", "cross-platform support", ".NET 6", ".NET 7", "performance improvements", ".NET MAUI", "GUI applications", "cross-platform", "Linux", ".NET 8 RC1", "Native AOT", "Blazor improvements", "Entity Framework updates", "benchmarks", "transformative experience", "developers"]
+description = "While the tech world awaits for .NET 8, it’s an opportune moment to take a step back and reflect on the transformative journey of C# and .NET."
+coverImage="/images/dotnet.webp"
+coverImageAltText=".NET Logo"
 +++
 
 {{<img src="/images/dotnet.webp" align="center" alt=".NET logo" >}}<br />
 
-While the tech world awaits for .NET 8, it’s an opportune moment to take a step back and reflect on the transformative journey of C# and .NET. <!--more--> Their evolution was not just a testament to Microsoft’s vision but also the dynamic and ever-changing demands of developers worldwide. This article offers a whirlwind tour of their metamorphosis, highlighting key milestones, and setting the stage for the exciting innovations .NET 8 promises to bring.
+While the tech world awaits for .NET 8, it’s an opportune moment to take a step back and reflect on the transformative journey of C# and .NET. Their evolution was not just a testament to Microsoft’s vision but also the dynamic and ever-changing demands of developers worldwide. This article offers a whirlwind tour of their metamorphosis, highlighting key milestones, and setting the stage for the exciting innovations .NET 8 promises to bring.
 
 ## How it all began
 

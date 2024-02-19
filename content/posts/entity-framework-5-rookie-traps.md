@@ -8,11 +8,14 @@ comments = true
 tags = ["database", "dotnet", "backend"]
 categories = ["Database Development","Back End"]
 keywords = ["Entity Framework", "EF", ".NET", "beginner developer", "job requirements", "guides", "benefits", "caveats", "DB", "Code-First", "nvarchar(max)", "performance", "indexes", "data retrieval", "Lazy Loading", "Eager Loading", "N+1 problem", "Migrations", "CLI", "SQL", "JOIN operations", "Security concerns", "RAW SQL", "SQLParameter class", "DbContext", "Dapper", "SQL Injection attacks"]
+description = "I’m pretty sure that everyone who works with C#/.NET has heard at least once about Entity Framework (EF). Whether it’s good or bad, it’s used widely and it will benefit you to know how to work with it."
+coverImage = "/images/entity-framework.webp"
+coverImageAltText = "Entity Framework Logo"
 +++
 
 {{<img src="/images/entity-framework.webp" align="center" alt="Entity Framework logo">}}<br />
 
-I’m pretty sure that everyone who works with C#/.NET has heard at least once about Entity Framework (EF). Whether it’s good or bad, it’s used widely and it will benefit you to know how to work with it. <!--more--> But what happens when a beginner developer enters the .NET world and sees the picture where EF is promoted everywhere? All of the job requirements include it and you can find plenty of guides on it. We can’t ignore that EF gives you a lot of benefits, but some caveats may be not so visible for a beginner developer and in this article, I’d like to introduce them to you.
+I’m pretty sure that everyone who works with C#/.NET has heard at least once about Entity Framework (EF). Whether it’s good or bad, it’s used widely and it will benefit you to know how to work with it. But what happens when a beginner developer enters the .NET world and sees the picture where EF is promoted everywhere? All of the job requirements include it and you can find plenty of guides on it. We can’t ignore that EF gives you a lot of benefits, but some caveats may be not so visible for a beginner developer and in this article, I’d like to introduce them to you.
 
 ## 1. Control over the DB while doing Code-First
 
