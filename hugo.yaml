@@ -107,21 +107,27 @@ params:
 menu:
   main:
     - name: "Articles"
+      identifier: "articles"
       pageRef: "/"
       weight: 10
     - name: "Tags"
+      identifier: "tags"
       pageRef: "/tags"
       weight: 20
     - name: "Categories"
+      identifier: "categories"
       pageRef: "/categories"
       weight: 30
     - name: "About"
+      identifier: "about"
       pageRef: "/about"
       weight: 40
     - name: "T&C"
+      identifier: "terms-and-conditions"
       pageRef: "/terms-and-conditions"
       weight: 50
     - name: "Privacy"
+      identifier: "privacy"
       pageRef: "/privacy-policy"
       weight: 60
 
