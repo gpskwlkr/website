@@ -14,13 +14,13 @@ coverImage = "/images/database.webp"
 coverImageAltText = "General photo of a database"
 +++
 
-{{<img src="/images/database.webp" align="center" alt="General photo of a database">}} <br />
+{{<img src="/images/database.webp" align="center" alt="General photo of a database">}} <br>
 
 Whether you’re a hobbyist or a professional developer, at some point you’re going to need a database. We all know the famous solutions like AWS, Azure, or maybe something that’s more affordable like Linode or DigitalOcean, but what if you only need a database to test some of your ideas? Spinning up your own instance with Docker or just installing it locally may not always be an option, I wish there were some database services that would be performant enough for testing your ideas and also were free… Well, there are and in this article, I’m going to show off 5 of them, so you can choose the best one for your project!
 
 ## PlanetScale
 
-{{<img src="/images/planetscale.webp" align="center" alt="PlanetScale logo">}} <br />
+{{<img src="/images/planetscale.webp" align="center" alt="PlanetScale logo">}} <br>
 
 **PlanetScale** is a serverless platform for **MySQL** which offers really good options on a free tier. I think it’d suit most of the developers who want to use **MySQL** and to save up some money as well, here’s a short brief of what the free tier has to offer:
 
@@ -34,7 +34,7 @@ As you see, [**PlanetScale**](https://planetscale.com/) has a pretty good free t
 
 ## Cloudflare D1
 
-{{<img src="/images/cloudflare_d1.webp" align="center" alt="Cloudflare D1 logo">}} <br />
+{{<img src="/images/cloudflare_d1.webp" align="center" alt="Cloudflare D1 logo">}} <br>
 
 **Cloudflare D1** is basically a SQLite database which runs on the edge and is used with **Cloudflare Workers**. So, if you have your web service deployed to **Workers** which is also running on the edge, it means that your users will be able to always connect to the closest server and get the least amount of latency for them. Here’s a short brief of what the free tier has to offer:
 
@@ -46,7 +46,7 @@ If you’re someone who enjoys using **Cloudflare Workers, D1** might be the bes
 
 ## Xata
 
-{{<img src="/images/xata.webp" align="center" alt="Xata logo">}} <br />
+{{<img src="/images/xata.webp" align="center" alt="Xata logo">}} <br>
 
 **Xata** is another serverless relational database that is based on **PostgreSQL** and **ElasticSearch** under the hood. It treats your tables like a spreadsheet and what’s really cool about it is that it has full text search built in, so you don’t need to have your data duplicated to **ElasticSearch** instance. It has **SDK**s available for many programming languages as well as visual schema editor which makes it really easy to use. Here’s a short brief of what the free tier has to offer:
 

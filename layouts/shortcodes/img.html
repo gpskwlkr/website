@@ -1,19 +1,20 @@
-<figure {{ with .Get "class" }}class="{{ . }}"{{ end }}>
-  {{ with .Get "link" }}<a href="{{ . }}">{{ end }}
-{{ $loading := .Get "loading" | default "lazy" }}
+<figure {{ with .Get "class" }}class="{{ . }}" {{ end }}>
+    {{ with .Get "link" }}<a href="{{ . }}">{{ end }}
+        {{ $loading := .Get "loading" | default "lazy" }}
 
-<img loading="{{ $loading }}" src="{{ .Get "src" }}" {{ if or (.Get "alt") (.Get "caption") }}alt="{{ with .Get "alt" }}{{ . }}{{ else }}{{ .Get "caption" }}{{ end }}"{{ end }} width="600px" height="300px" style="display: block; float: none; margin-left: auto; margin-right: auto;"
-/>
-    {{ if .Get "link" }}</a>{{ end }}
+        <img loading="{{ $loading }}" src="{{ .Get " src" }}" {{ if or (.Get "alt" ) (.Get "caption" )
+            }}alt="{{ with .Get " alt" }}{{ . }}{{ else }}{{ .Get "caption" }}{{ end }}"{{ end }} width="600"
+            height="300" style="display: block; float: none; margin-left: auto; margin-right: auto;" />
+        {{ if .Get "link" }}</a>{{ end }}
     {{ if or (or (.Get "title") (.Get "caption")) (.Get "attr") }}
-      <figcaption>{{ if isset .Params "title" }}
+    <figcaption>{{ if isset .Params "title" }}
         <h4>{{ .Get "title" }}</h4>{{ end }}
         {{ if or (.Get "caption") (.Get "attr") }}<p>
-        {{ .Get "caption" }}
-        {{ with .Get "attrlink" }}<a href="{{ . }}"> {{ end }}
-          {{ .Get "attr" }}
-        {{ if .Get "attrlink" }}</a> {{ end }}
+            {{ .Get "caption" }}
+            {{ with .Get "attrlink" }}<a href="{{ . }}"> {{ end }}
+                {{ .Get "attr" }}
+                {{ if .Get "attrlink" }}</a> {{ end }}
         </p> {{ end }}
-      </figcaption>
-  {{ end }}
+    </figcaption>
+    {{ end }}
 </figure>

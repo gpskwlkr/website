@@ -14,7 +14,7 @@ coverImage="/images/dotnet.webp"
 coverImageAltText=".NET Logo"
 +++
 
-{{<img src="/images/dotnet.webp" align="center" alt=".NET logo" >}}<br />
+{{<img src="/images/dotnet.webp" align="center" alt=".NET logo" >}}<br>
 
 While the tech world awaits for .NET 8, it’s an opportune moment to take a step back and reflect on the transformative journey of C# and .NET. Their evolution was not just a testament to Microsoft’s vision but also the dynamic and ever-changing demands of developers worldwide. This article offers a whirlwind tour of their metamorphosis, highlighting key milestones, and setting the stage for the exciting innovations .NET 8 promises to bring.
 

@@ -15,7 +15,7 @@ coverImageAltText = "Meme about message brokers"
 loading = "eager"
 +++
 
-{{<img src="/images/message-brokers-pt1.webp" alt="Meme about message brokers" >}} <br />
+{{<img src="/images/message-brokers-pt1.webp" alt="Meme about message brokers" >}} <br>
 
 If you're into microservices, you'll eventually have to deal with message brokers. Getting ready for this switch will definitely boost your confidence and make you feel more prepared.
 

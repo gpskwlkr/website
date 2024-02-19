@@ -14,7 +14,7 @@ coverImage = "/images/benchmark_meme.webp"
 coverImageAltText = "Meme about benchmarking with Console.WriteLine"
 +++
 
-{{<img src="/images/benchmark_meme.webp" align="center" alt="Meme about benchmarking with Console.WriteLine">}} <br />
+{{<img src="/images/benchmark_meme.webp" align="center" alt="Meme about benchmarking with Console.WriteLine">}} <br>
 
 Imagine perfecting your .NET application only to struggle with performance measurement. BenchmarkDotnet resolves this, offering developers a streamlined solution for precise benchmarking. Are you in your way to migrating the project from .NET 5 to .NET 8? Is it really worth it? BenchmarkDotnet allows you to test your most time or memory consuming methods against multiple versions of .NET framework with ease and decide whether you really should do it.
 
