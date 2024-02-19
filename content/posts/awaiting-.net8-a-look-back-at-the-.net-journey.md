@@ -11,10 +11,10 @@ categories = ["Back End", "News"]
 keywords = ["Tech world", ".NET 8", "C#", ".NET", "Microsoft", "software development", "web services", "desktop applications", "CLR", "BCL", "ASP.NET", "ADO.NET", "Windows Forms", "multiple languages", "evolution", "milestones", ".NET Framework", "C# 1.0", "Object-Oriented", "syntax", "garbage collection", "type-safety", "declarative programming", ".NET 5", ".NET Core", "cross-platform support", ".NET 6", ".NET 7", "performance improvements", ".NET MAUI", "GUI applications", "cross-platform", "Linux", ".NET 8 RC1", "Native AOT", "Blazor improvements", "Entity Framework updates", "benchmarks", "transformative experience", "developers"]
 description = "While the tech world awaits for .NET 8, it’s an opportune moment to take a step back and reflect on the transformative journey of C# and .NET."
 coverImage="/images/dotnet.webp"
-coverImageAltText="Purple background image with white .NET text on it"
+coverImageAltText="Purple background with white .NET text on it"
 +++
 
-{{<img src="/images/dotnet.webp" align="center" alt="Purple background image with white .NET text on it" >}}<br>
+{{<img src="/images/dotnet.webp" align="center" alt="Purple background with white .NET text on it" >}}<br>
 
 While the tech world awaits for .NET 8, it’s an opportune moment to take a step back and reflect on the transformative journey of C# and .NET. Their evolution was not just a testament to Microsoft’s vision but also the dynamic and ever-changing demands of developers worldwide. This article offers a whirlwind tour of their metamorphosis, highlighting key milestones, and setting the stage for the exciting innovations .NET 8 promises to bring.
 
@@ -22,7 +22,7 @@ While the tech world awaits for .NET 8, it’s an opportune moment to take a ste
 
 ### .NET Framework 1.0
 
-{{<img src="/images/dotnet_old.webp" alt="White background image with black Microsoft .net text on it">}}
+{{<img src="/images/dotnet_old.webp" alt="White background with black Microsoft .net text on it">}}
 
 Released in 2002, **.NET Framework 1.0** was Microsoft's answer to a changing software development landscape, aiming to provide a unified environment for developing web services, desktop applications, and other software. The first release included many of the key features that are still being used today, even if they’ve changed as time went by, these were:
 
@@ -47,7 +47,7 @@ Introduced alongside .NET Framework, C# 1.0 became one of the primary languages 
 
 ## What has changed
 
-{{<img src="/images/dotnet_5.webp" alt="White background image indicating new features coming with .NET 5">}}
+{{<img src="/images/dotnet_5.webp" alt="White background indicating new features coming with .NET 5">}}
 
 Although **.NET Framework** and **C#** went a long way and there was a ton of features added year to year, the major changed happened in November, 2020, when **.NET 5** was released. You might be asking, what did it change for us, developers? Well, let’s see:
 
@@ -67,7 +67,7 @@ In terms of major changes, there were not so much features offered with **.NET 6
 
 ## What to Expect
 
-{{<img src="/images/dotnet_maui.webp" alt="Purple background image with white .NET MAUI logo on it" >}}
+{{<img src="/images/dotnet_maui.webp" alt="Purple background with white .NET MAUI logo on it" >}}
 
 Even though **.NET 8** is set to release in **November, 2023**, we already can try it out! Yes, the **RC1** is already available and it has a lot to offer, including things like **Native AOT** for Web applications, **Blazor** improvements and **Entity Framework** updates, make sure to check out all the [benchmarks](https://devblogs.microsoft.com/dotnet/performance-improvements-in-net-8/) (really big performance improvements) and [RC1 notes.](https://devblogs.microsoft.com/dotnet/announcing-dotnet-8-rc1/) From the revolutionary advancements in Web application development to performance leaps, **.NET 8** promises a transformative experience for developers. So why wait? Dive into the **RC1** today and be among the first to feel the power of the future of **.NET**!
 
