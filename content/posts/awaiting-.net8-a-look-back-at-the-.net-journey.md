@@ -32,7 +32,7 @@ Released in 2002, **.NET Framework 1.0** was Microsoft's answer to a changing so
 
 As you can see, even though .NET platform is constantly changing and evolving, the key features were a fundament for what we have today, which is being polished till this day. We’ve talked about the platform and now you might be wondering what did C# 1.0 had to offer back then?
 
-## C# 1.0
+### C# 1.0
 
 Introduced alongside .NET Framework, C# 1.0 became one of the primary languages designed for the platform. Anders Hejlsberg, who also worked on Turbo Pascal and Borland Delphi, was a chief architect behind C#. As you may guess, C# 1.0 was not so rich on features as today, but in the same way as .NET Framework 1.0, it already had all the key concepts included that we’re still using to this day and they’re nowhere to go.
 
@@ -54,7 +54,7 @@ Although **.NET Framework** and **C#** went a long way and there was a ton of fe
 
 All of this sounds pretty cool, although **.NET 5** didn’t bring us any GUI development libraries which were cross-platform and existing ones like **WinForms** or **WPF** remained Windows-only technologies.
 
-## **.NET 6/7**
+### .NET 6/7
 
 In terms of major changes, there were not so much features offered with **.NET 6/7** releases as in previous versions, but they both provided significant performance improvements and also, we finally have a technology for making GUI applications cross-platform, although, still not possible for Linux. What I’m talking about is - **.NET MAUI**, which is pretty good, but comes with some caveats.
 
