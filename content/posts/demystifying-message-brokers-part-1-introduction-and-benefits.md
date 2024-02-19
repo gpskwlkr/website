@@ -11,7 +11,7 @@ categories = ["Back End", "Guides", "Architecture"]
 keywords = ["message brokers", "message broker definition", "message broker functionality", "message broker use cases", "how message brokers work", "advantages of message brokers", "message broker benefits", "why use message brokers", "messaging middleware", "enterprise messaging systems", "message queueing systems", "distributed messaging", "real-time messaging", "asynchronous messaging", "message routing", "message delivery guarantees", "message durability", "scalability with message brokers", "fault tolerance in message brokers", "message broker architectures", "high availability messaging", "message broker comparison", "message broker features", "message broker applications", "message broker deployment", "message broker scalability", "message broker reliability"]
 +++
 
-{{<img loading="eager" src="/images/message-brokers-pt1.webp" alt="Meme about message brokers" >}}
+{{<img loading="eager" src="/images/message-brokers-pt1.webp" alt="Meme about message brokers" >}} <br />
 
 If you're into microservices, you'll eventually have to deal with message brokers. Getting ready for this switch will definitely boost your confidence and make you feel more prepared. <!--more-->
 
