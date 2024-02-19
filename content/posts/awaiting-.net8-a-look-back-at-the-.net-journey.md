@@ -15,9 +15,9 @@ keywords = ["Tech world", ".NET 8", "C#", ".NET", "Microsoft", "software develop
 
 While the tech world awaits for .NET 8, it’s an opportune moment to take a step back and reflect on the transformative journey of C# and .NET. <!--more--> Their evolution was not just a testament to Microsoft’s vision but also the dynamic and ever-changing demands of developers worldwide. This article offers a whirlwind tour of their metamorphosis, highlighting key milestones, and setting the stage for the exciting innovations .NET 8 promises to bring.
 
-# How it all began
+## How it all began
 
-## .NET Framework 1.0
+### .NET Framework 1.0
 
 {{<img src="/images/dotnet_old.webp" alt="Old .NET logo">}}
 

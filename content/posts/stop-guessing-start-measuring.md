@@ -15,7 +15,7 @@ keywords = ["BenchmarkDotnet", ".NET application", "performance measurement", "m
 
 Imagine perfecting your .NET application only to struggle with performance measurement. BenchmarkDotnet resolves this, offering developers a streamlined solution for precise benchmarking. <!--more--> Are you in your way to migrating the project from .NET 5 to .NET 8? Is it really worth it? BenchmarkDotnet allows you to test your most time or memory consuming methods against multiple versions of .NET framework with ease and decide whether you really should do it.
 
-# Demystifying BenchmarkDotnet
+## Demystifying BenchmarkDotnet
 
 Let’s look at the first example you see, when you open up BenchmarkDotnet’s [website](https://benchmarkdotnet.org), or [Github](https://github.com/dotnet/BenchmarkDotNet) page.
 
@@ -51,7 +51,7 @@ public class Md5VsSha256
 
 It’s not required for you to understand everything right now, BenchmarkDotnet has beautiful docs and you could dive straight into it after reading this article, but there are some key concepts that you should understand while using BenchmarkDotnet.
 
-## 1. Targeting multiple versions
+### 1. Targeting multiple versions
 
 With BenchmarkDotnet you can easily test your code against multiple versions of .NET and all you have to do is using an attribute just as we saw in the example above.
 
@@ -63,7 +63,7 @@ You could use as much of these as you want, you’re not really restricted, but 
 
 > Remember! It’s **crucial** to have all target versions of .NET installed on your system.
 
-## 2. Moving setup away from benchmarks
+### 2. Moving setup away from benchmarks
 
 - While making benchmarks, your code may require some additional data to work with and you typically don’t want to have the data generating process inside of your benchmarks, because then it counts as method execution time, which may not be true in all cases. BenchmarkDotnet solves this problem in an elegant way, you just have to make a method for data generation purposes and mark it as `[GlobalSetup]`.
 
@@ -98,7 +98,7 @@ You could use as much of these as you want, you’re not really restricted, but 
     }
 ```
 
-## 3. Identifying methods to be benchmarked
+### 3. Identifying methods to be benchmarked
 
 Even though the code we're currently examining is relatively straightforward, benchmarks can often involve significant amounts of code, depending on the task at hand. With this in mind, you might have multiple setup methods, helper methods, etc, so it’s crucial to mark which methods need to be benchmarked exactly. The way BenchmarkDotnet does this is pretty straightforward, with the `[Benchmark]` attribute. One thing that the code above doesn’t tell you, this attribute can also have a `Baseline` parameter. Let’s say you’re refactoring some of the old code and you want to see how the new version compares to it, it’s pretty easy as well.
 
@@ -120,11 +120,11 @@ public void SomeHelperMethod() {
 
 Now with all the other data including mean time, etc, you will also get a new column called **Ratio** that indicates how your other benchmarks compare to your baseline benchmark. You can see more in the BenchmarkDotnet [docs](https://benchmarkdotnet.org/articles/samples/IntroBenchmarkBaseline.html) for this parameter.
 
-# Creating your own benchmarks
+## Creating your own benchmarks
 
 Now that we’ve deep dived into BenchmarkDotnet, I think it’s time to run your first benchmark, you could use the same code provided by the docs, or write your own. For the sake of simplicity I’ll cover the one provided.
 
-## Installing prerequisites
+### Installing prerequisites
 
 First thing you would want to do, to avoid writing all the code by yourself is installing BenchmarkDotnet templates which could be done via dotnet CLI.
 
@@ -140,7 +140,7 @@ Or if you’re using a language different from C#, you could specify it as well
 
 `dotnet new benchmark -lang VB`
 
-## Running your benchmarks
+### Running your benchmarks
 
 First thing you see after creating a benchmark project is a default `Program` and `Benchmarks` classes. `Program` is responsible for running benchmarks located at `Benchmarks` class. You could have as many benchmark classes as you want, but make sure to add all of them to `Program` if you’d like to run them as well. You could see that program contains pretty simple code
 
@@ -166,7 +166,7 @@ static void Main(string[] args) => BenchmarkSwitcher.FromAssembly(typeof(Program
 
 This way, BenchmarkDotnet will identify all the benchmarks your assembly contains and let you choose which ones to run.
 
-# Benchmark results
+### Benchmark results
 
 I’ll be running slightly modified, in terms of targets, version of the same benchmark provided by the docs.
 
@@ -228,7 +228,7 @@ This table basically shows us comparison of these two algorithms for each versio
   1 us    : 1 Microsecond (0.000001 sec)
 ```
 
-# Conclusion
+## Conclusion
 
 While BenchmarkDotnet will not supercharge your code to run faster or make you a 10x engineer, it’s nice to have in your toolbox. I remember making monstrosities out of stopwatches and `Console.WriteLine` just to compare the runtime speed of several methods, we’ve all been there and I’m pretty sure you can’t reach the same level of accuracy with those.
 

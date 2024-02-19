@@ -222,7 +222,7 @@ So you might say, if EF has a chance of generating bad SQL code, why don’t I u
 
 As you see, your parameter is directly passed to the SELECT statement. It is not good, to put it mildly. You always got to be careful with such tools, if you screw anything up, you might as well drop your whole DB.
 
-**Conclusion**
+## Conclusion
 
 {{<img src="/images/dapper-meme.webp" align="center" alt="Meme about junior dev looking to Dapper">}}
 
