@@ -1,24 +1,24 @@
-<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta name="description" content="{{ site.Params.meta_description }}" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="{{ site.Params.meta_description }}">
 <meta name="keywords" content="{{ with .Params.Keywords }}{{ delimit . " ," }}{{ else }}{{ $.Site.Params.Keywords }}{{
-    end }}" />
-<meta name="author" content="Giorgi Anakidze" />
-<meta name="robots" content="index,follow" />
-<meta property="og:title" content="{{ .Title }}" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="{{ .Permalink }}" />
-<meta property="og:image" content="https://vercel-og-umber.vercel.app/api/og?title={{ .Title }}" />
-<meta property="twitter:image" content="https://vercel-og-umber.vercel.app/api/og?title={{ .Title }}" />
-<meta property="twitter:image:src" content="https://vercel-og-umber.vercel.app/api/og?title={{ .Title }}" />
-<meta property="twitter:site" content="@gpskwlkr_" />
-<meta property="twitter:creator" content="@gpskwlkr_" />
-<meta property="twitter:description" content="{{ site.Params.meta_description }}" />
-<meta property="twitter:card" content="summary_large_image" />
+    end }}">
+<meta name="author" content="Giorgi Anakidze">
+<meta name="robots" content="index,follow">
+<meta property="og:title" content="{{ .Title }}">
+<meta property="og:type" content="website">
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:image" content="https://vercel-og-umber.vercel.app/api/og?title={{ .Title }}">
+<meta property="twitter:image" content="https://vercel-og-umber.vercel.app/api/og?title={{ .Title }}">
+<meta property="twitter:image:src" content="https://vercel-og-umber.vercel.app/api/og?title={{ .Title }}">
+<meta property="twitter:site" content="@gpskwlkr_">
+<meta property="twitter:creator" content="@gpskwlkr_">
+<meta property="twitter:description" content="{{ site.Params.meta_description }}">
+<meta property="twitter:card" content="summary_large_image">
 
-<link rel="canonical" href="{{ .Permalink }}" />
+<link rel="canonical" href="{{ .Permalink }}">
 
-<link rel="shortcut icon" href="{{ " favicon.ico" | relURL }}" />
+<link rel="shortcut icon" href="{{ " favicon.ico" | relURL }}">
 {{ partialCached "css.html" . }}
 
 {{ if .Params.katex}}{{ partial "katex.html" . }}{{ end }}
