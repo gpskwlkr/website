@@ -15,6 +15,7 @@
     {{- else -}}
       {{- $title = printf "%s :: %s" .Title $mainTitle -}}
     {{- end -}}
+    {{- $title = $title | truncate 60}}
     <title>{{- $title -}}</title>
   {{ end }}
   {{ partial "head.html" . }}
