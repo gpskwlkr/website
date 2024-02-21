@@ -60,7 +60,7 @@
         },
         "description": "{{ .Description }}",
         "articleBody": "{{ .Content }}",
-        "keywords": {{ with .Params.keywords }}  "{{ delimit . ", " }}" {{ end }}
+        "keywords": {{ with .Params.keywords }}  "{{ delimit . ", " }}" {{ end }},
         "datePublished": "{{ .Date.Format ("2006-01-02") }}",
         "wordCount": "{{ .WordCount }}"
     }
