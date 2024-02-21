@@ -15,7 +15,7 @@
       {{- $isCurrent := or ($page.IsMenuCurrent .Menu .) ($page.HasMenuCurrent .Menu .) (and $page.IsHome (and .Page (eq $contentTypeName .Page.Type))) -}}
       {{ if not .HasChildren }}
         <li id="{{ .Identifier }}" class="">
-          <a class="block px-3 py-3 hover:text-emerald-600 {{- if $isCurrent }} dark:text-emerald-600 text-emerald-900{{ end -}}"
+          <a class="block px-3 py-3 hover:text-emerald-600 {{- if $isCurrent }} dark:text-emerald-600 text-emerald-600{{ end -}}"
             href="{{ .URL }}" title="{{ .Name }}">{{ .Name }}</a>
         </li>
       {{ end }}
