@@ -27,6 +27,16 @@
     {
         "@context": "http://schema.org",
         "@type": "WebSite",
+        "name": "{{ site.Title }}",
+        {{ with .Site.Params.alternatePageName }}"alternateName": "{{ . }}",{{ end }}
+        "url": "{{ site.BaseURL }}"
+    }
+</script>
+
+<script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "WebPage",
         "name": "{{ .Title }}",
         {{ with .Site.Params.alternatePageName }}"alternateName": "{{ . }}",{{ end }}
         "url": "{{ .Permalink }}"
