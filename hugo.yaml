@@ -43,7 +43,10 @@ markup:
       unsafe: true
 
 params:
+  author: "Giorgi Anakidze"
   enable_toc: true
+  contacts:
+      contactPoint: "giorgi.anakidze@outlook.com"
   enable_collapsible_toc: true
   enable_collapsible_changelogs: false
   enable_math: true
@@ -103,6 +106,10 @@ params:
         title: "Twitter"
         icon: "brand-twitter"
         link: "https://twitter.com/gpskwlkr_"
+  sameAs:
+    - "https://github.com/gpskwlkr"
+    - "https://www.linkedin.com/in/giorgi-anakidze/"
+    - "https://twitter.com/gpskwlkr_"
 
 menu:
   main:
