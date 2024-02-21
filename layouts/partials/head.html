@@ -29,19 +29,43 @@
         "@type": "WebSite",
         "name": "{{ site.Title }}",
         {{ with .Site.Params.alternatePageName }}"alternateName": "{{ . }}",{{ end }}
-        "url": "{{ site.BaseURL }}"
+        "url": "{{ site.BaseURL }}",
+        "description": {{ .Site.Params.Description }}
     }
 </script>
-
+{{ if .IsPage }}
 <script type="application/ld+json">
     {
         "@context": "http://schema.org",
-        "@type": "WebPage",
-        "name": "{{ .Title }}",
-        {{ with .Site.Params.alternatePageName }}"alternateName": "{{ . }}",{{ end }}
-        "url": "{{ .Permalink }}"
+        "@type": "Article",
+        "headline": "{{ .Title }}",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "{{ .Permalink }}"
+        },
+        "image": [
+            "{{ .Params.coverImage }}"
+        ],
+        "author": {
+            "@type" : "Person",
+            "name": "{{ .Site.Params.author }}"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "{{ .Site.Params.author }}",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "{{ .Site.Params.header.logo }}"
+            }
+        },
+        "description": "{{ .Description }}",
+        "articleBody": "{{ .Content }}",
+        "keywords": {{ with .Params.keywords }}  "{{ delimit . ", " }}" {{ end }}
+        "datePublished": "{{ .Date.Format ("2006-01-02") }}",
+        "wordCount": "{{ .WordCount }}"
     }
 </script>
+{{ end }}
 
 <script type="application/ld+json">
     {
