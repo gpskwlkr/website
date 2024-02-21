@@ -1,6 +1,6 @@
 +++
 title = 'Zero Cost Database Magic'
-date = 2023-09-29
+date = 2023-09-29T16:46:30+04:00
 draft = false
 showPublicationDate = true
 showReadingTime = true

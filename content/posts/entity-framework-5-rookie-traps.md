@@ -1,6 +1,6 @@
 +++
 title = 'Entity Framework: 5 Rookie Traps'
-date = 2023-09-26
+date = 2023-09-26T14:46:30+04:00
 draft = false 
 showReadingTime = true
 showPublicationDate = true

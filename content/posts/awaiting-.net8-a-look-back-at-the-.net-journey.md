@@ -1,6 +1,6 @@
 +++
 title = 'Awaiting .NET 8: A Look Back at the .NET Journey'
-date = 2023-09-23
+date = 2023-09-23T12:46:30+04:00
 draft = false
 showPublicationDate = true
 showReadingTime = true

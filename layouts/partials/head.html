@@ -48,7 +48,8 @@
         ],
         "author": {
             "@type" : "Person",
-            "name": "{{ .Site.Params.author }}"
+            "name": "{{ .Site.Params.author }}",
+            "url": "https://twitter.com/gpskwlkr_"
         },
         "publisher": {
             "@type": "Organization",
@@ -61,7 +62,7 @@
         "description": "{{ .Description }}",
         "articleBody": "{{ .Content }}",
         "keywords": {{ with .Params.keywords }}  "{{ delimit . ", " }}" {{ end }},
-        "datePublished": "{{ .Date.Format ("2006-01-02") }}",
+        "datePublished": "{{ .Date }}",
         "wordCount": "{{ .WordCount }}"
     }
 </script>
