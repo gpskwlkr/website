@@ -1512,6 +1512,7 @@ video {
   background-color: rgb(226 232 240 / var(--tw-bg-opacity));
 }
 
+
 .bg-slate-50 {
   --tw-bg-opacity: 1;
   background-color: rgb(248 250 252 / var(--tw-bg-opacity));
@@ -1675,6 +1676,16 @@ video {
 
 .tracking-tight {
   letter-spacing: -0.025em;
+}
+
+.text-color {
+  --tw-text-opacity: 1;
+  color: rgb(247 247 247 / var(--tw-text-opacity));
+}
+
+.text-color-hover {
+  --tw-text-opacity: 1;
+  color: rgb(66 72 108 / var(--tw-text-opacity));
 }
 
 .text-emerald-600 {
@@ -2743,6 +2754,11 @@ video {
 .hover\:text-emerald-600:hover {
   --tw-text-opacity: 1;
   color: rgb(5 150 105 / var(--tw-text-opacity));
+}
+
+.hover\:text-color-hover:hover {
+  --tw-text-opacity: 1;
+  color: rgb(66 72 108 / var(--tw-text-opacity));
 }
 
 .focus\:border-blue-500:focus {
