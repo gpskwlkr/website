@@ -91,13 +91,6 @@
       }
     }
 </script>
-<script>
-if (window.location.pathname !== '/' && window.location.pathname.endsWith('/')) {
-    const newUrl = window.location.pathname.slice(0, -1);
-    window.history.replaceState({}, '', newUrl);
-}
-</script>
-
 <!-- finish schema.org integration -->
 
 {{- partial "custom_head.html" -}}
