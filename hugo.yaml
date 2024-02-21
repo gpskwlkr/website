@@ -54,37 +54,6 @@ params:
   color_scheme: "dark"
   contentTypeName: "posts"
   adSenseId: "{{GOOGLE_ADSENSE_ID}}"
-  keywords:
-    - programming
-    - technology
-    - databases
-    - c#
-    - mssql
-    - linux
-    - rust
-    - go (golang)
-    - development
-    - software engineering
-    - coding
-    - programming languages
-    - web development
-    - database management
-    - software architecture
-    - system administration
-    - operating systems
-    - cloud computing
-    - algorithms
-    - data structures
-    - code optimization
-    - version control
-    - devops
-    - api development
-    - frontend development
-    - backend development
-    - full-stack development
-    - mobile development
-    - game development
-    - embedded systems
   description: ".NET • MSSQL • Linux • Rust • GoLang"
   meta_description: ".NET • MSSQL • Linux • Rust • GoLang"
   header:
