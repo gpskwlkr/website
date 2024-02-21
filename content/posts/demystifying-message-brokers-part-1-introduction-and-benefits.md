@@ -12,7 +12,6 @@ keywords = ["message brokers", "message broker definition", "message broker func
 description = "If you're into microservices, you'll eventually have to deal with message brokers. Getting ready for this switch will definitely boost your confidence and make you feel more prepared."
 coverImage = "/images/message-brokers-pt1.webp"
 coverImageAltText = "A meme where one person gives another person a piece of paper with text, likely related to message brokers"
-loading = "eager"
 +++
 
 {{<img src="/images/message-brokers-pt1.webp" alt="A meme where one person gives another person a piece of paper with text, likely related to message brokers" >}} <br>
