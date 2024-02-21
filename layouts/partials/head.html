@@ -48,7 +48,7 @@
             "@id": "{{ .Permalink }}"
         },
         "image": [
-            "{{ .Params.coverImage }}"
+            "{{ .Site.BaseURL }}{{ .Params.coverImage }}"
         ],
         "author": {
             "@type" : "Person",
@@ -60,7 +60,7 @@
             "name": "{{ .Site.Params.author }}",
             "logo": {
                 "@type": "ImageObject",
-                "url": "{{ .Site.Params.header.logo }}"
+                "url": "{{ .Site.BaseURL }}{{ .Site.Params.header.logo }}"
             }
         },
         "description": "{{ .Description }}",
@@ -77,10 +77,14 @@
       "@context": "http://schema.org",
       "@type": "Organization",
       "name": "{{ .Site.Params.author }}",
-      "url": "{{ .Site.BaseURL }}"
-      {{ with .Site.Params.sameAs }}, "sameAs": {{ . }}{{ end }}
-      {{ with .Site.Params.header.logo }}, "logo": "{{ . }}"{{ end }}
-      {{ with .Site.Params.contacts.contactPoint }}, "contactPoint": {{ . }}{{ end }}
+      "url": "{{ .Site.BaseURL }}",
+      "logo": "{{ .Site.BaseURL }}{{ .Site.Params.header.logo }}",
+      {{ with .Site.Params.sameAs }}"sameAs": {{ . }}{{ end }},
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "Owner",
+        "email": "{{ .Site.Params.contacts.contactPoint }}"
+      }
     }
 </script>
 
