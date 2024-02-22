@@ -6,6 +6,8 @@
 <meta name="description" content="{{ site.Params.meta_description }}">
 {{ end }}
 <meta name="author" content="Giorgi Anakidze">
+<meta name="keywords"
+    content="{{ with .Params.Keywords }}{{ range $index, $keyword := . }}{{ if $index }}, {{ end }}{{ $keyword }}{{ end }}{{ else }}{{ range $index, $keyword := $.Site.Params.Keywords }}{{ if $index }}, {{ end }}{{ $keyword }}{{ end }}{{ end }}">
 <meta name="robots" content="index,follow">
 <meta property="og:title" content="{{ .Title }}">
 <meta property="og:type" content="website">
@@ -25,7 +27,7 @@
 
 <link rel="canonical" href="{{ .Permalink }}">
 
-<link rel="shortcut icon" href="{{ "favicon.ico" | relURL }}">
+<link rel="shortcut icon" href="{{ " favicon.ico" | relURL }}">
 {{ partialCached "css.html" . }}
 
 {{ if .Params.katex}}{{ partial "katex.html" . }}{{ end }}
