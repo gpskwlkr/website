@@ -10,7 +10,7 @@ tags = ["TIOBEIndex", "programming languages", "software development"]
 categories = ["General", "News"]
 keywords = ["TIOBE index", "Programming language rankings", "Language popularity", "Software development trends", "Language adoption rates", "Search engine queries", "Programming language usage", "Language ranking analysis", "Language popularity metrics", "Programming language selection", "Popular programming languages", "Language market share", "Programming language trends", "Software development landscape", "Go language ranking", "Golang rise in TIOBE", "Go programming language popularity", "Go language adoption", "Golang climbing TIOBE ranks", "Go language surge", "Golang growth in TIOBE index", "Go language momentum", "Go programming language trends", "Golang moving up TIOBE ladder", "Go language advancement", "Golang reaching 8th place in TIOBE", "Go language market share", "Golang gaining traction", "Go language visibility in TIOBE"]
 description = "Ranking wars have been with us all the time. There's a never ending paradigm of \"Best frameworks for X\" or similar questions, but one thing that has been with us from 2000 to this day is - TIOBE Index."
-coverImage = "images/tiobe.webp"
+coverImage = "/images/tiobe.webp"
 coverImageAltText = "A meme where person wants to use some programming language but TIOBE stops them"
 loading = "eager"
 +++
