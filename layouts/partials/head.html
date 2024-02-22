@@ -1,41 +1,52 @@
-<meta http-equiv="content-type" content="text/html; charset=utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 {{ if .IsPage }}
-<meta name="description" content="{{ .Description }}">
+<meta name="description" content="{{ .Description }}" />
 {{ else }}
-<meta name="description" content="{{ site.Params.meta_description }}">
+<meta name="description" content="{{ site.Params.meta_description }}" />
 {{ end }}
-<meta name="author" content="Giorgi Anakidze">
-<meta name="keywords"
-    content="{{ with .Params.Keywords }}{{ range $index, $keyword := . }}{{ if $index }}, {{ end }}{{ $keyword }}{{ end }}{{ else }}{{ range $index, $keyword := $.Site.Params.Keywords }}{{ if $index }}, {{ end }}{{ $keyword }}{{ end }}{{ end }}">
-<meta name="robots" content="index,follow">
-<meta property="og:title" content="{{ .Title }}">
+<meta name="author" content="Giorgi Anakidze" />
+<meta
+    name="keywords"
+    content="{{ with .Params.Keywords }}{{ range $index, $keyword := . }}{{ if $index }}, {{ end }}{{ $keyword }}{{ end }}{{ else }}{{ range $index, $keyword := $.Site.Params.Keywords }}{{ if $index }}, {{ end }}{{ $keyword }}{{ end }}{{ end }}"
+/>
+<meta name="robots" content="index,follow" />
+<meta property="og:title" content="{{ .Title }}" />
 {{ if .IsPage }}
-<meta property="og:type" content="article">
+<meta property="og:type" content="article" />
 {{ else }}
-<meta property="og:type" content="website">
+<meta property="og:type" content="website" />
 {{ end }}
-<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:url" content="{{ .Permalink }}" />
 {{ if .IsPage }}
-<meta property="og:description" content="{{ .Description }}">
+<meta property="og:description" content="{{ .Description }}" />
 {{ else }}
-<meta property="og:description" content="{{ .Site.Params.Description }}">
+<meta property="og:description" content="{{ .Site.Params.Description }}" />
 {{ end }}
-<meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://vercel-og-umber.vercel.app/api/og?title={{ .Title }}">
-<meta property="twitter:image" content="https://vercel-og-umber.vercel.app/api/og?title={{ .Title }}">
-<meta property="twitter:image:src" content="https://vercel-og-umber.vercel.app/api/og?title={{ .Title }}">
-<meta property="twitter:site" content="@gpskwlkr_">
-<meta property="twitter:creator" content="@gpskwlkr_">
-<meta property="twitter:description" content="{{ site.Params.meta_description }}">
-<meta property="twitter:card" content="summary_large_image">
+<meta property="og:locale" content="en_US" />
+<meta
+    property="og:image"
+    content="https://vercel-og-umber.vercel.app/api/og?title={{ .Title }}"
+/>
+<meta
+    property="twitter:image"
+    content="https://vercel-og-umber.vercel.app/api/og?title={{ .Title }}"
+/>
+<meta
+    property="twitter:image:src"
+    content="https://vercel-og-umber.vercel.app/api/og?title={{ .Title }}"
+/>
+<meta property="twitter:site" content="@gpskwlkr_" />
+<meta property="twitter:creator" content="@gpskwlkr_" />
+<meta
+    property="twitter:description"
+    content="{{ site.Params.meta_description }}"
+/>
+<meta property="twitter:card" content="summary_large_image" />
 
-<link rel="canonical" href="{{ .Permalink }}">
+<link rel="canonical" href="{{ .Permalink }}" />
 
-<link rel="shortcut icon" href="{{ "favicon.ico" | relURL }}">
-{{ partialCached "css.html" . }}
-
-{{ if .Params.katex}}{{ partial "katex.html" . }}{{ end }}
+<link rel="shortcut icon" href="{{ "favicon.ico" | relURL }}"> {{ partialCached "css.html" . }} {{ if .Params.katex}}{{ partial "katex.html" . }}{{ end }}
 
 <!-- schema.org integration -->
 <script type="application/ld+json">
@@ -50,53 +61,96 @@
 </script>
 {{ if .IsPage }}
 <script type="application/ld+json">
-    {
-        "@context": "http://schema.org",
-        "@type": "Article",
-        "headline": "{{ .Title }}",
-        "mainEntityOfPage": {
-            "@type": "WebPage",
-            "@id": "{{ .Permalink }}"
-        },
-        "image": [
-            "{{ .Site.BaseURL }}{{ .Params.coverImage }}"
-        ],
-        "author": {
-            "@type" : "Person",
-            "name": "{{ .Site.Params.author }}",
-            "url": "https://twitter.com/gpskwlkr_"
-        },
-        "publisher": {
-            "@type": "Organization",
-            "name": "{{ .Site.Params.author }}",
-            "logo": {
-                "@type": "ImageObject",
-                "url": "{{ .Site.BaseURL }}{{ .Site.Params.header.logo }}"
-            }
-        },
-        "description": "{{ .Description }}",
-        "articleBody": "{{ .Content }}",
-        "keywords": {{ with .Params.keywords }}  "{{ delimit . ", " }}" {{ end }},
-        "datePublished": "{{ .Date }}",
-        "wordCount": "{{ .WordCount }}"
-    }
+{
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "headline": "{{ .Title }}",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "{{ .Permalink }}"
+    },
+    "image": [
+        "{{ .Site.BaseURL }}{{ .Params.coverImage }}"
+    ],
+    "author": {
+        "@type" : "Person",
+        "name": "{{ .Site.Params.author }}",
+        "url": "https://twitter.com/gpskwlkr_"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "{{ .Site.Params.author }}",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "{{ .Site.BaseURL }}{{ .Site.Params.header.logo }}"
+        }
+    },
+    "description": "{{ .Description }}",
+    "articleBody": "{{ .Content }}",
+    "keywords": {{ with .Params.keywords }}  "{{ delimit . ", " }}" {{ end }},
+    "datePublished": "{{ .Date }}",
+    "wordCount": "{{ .WordCount }}"
+}
 </script>
 {{ end }}
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+    {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "{{ .Site.BaseURL }}"
+    },
+    {{ if or (eq .Type "categories") (eq .Type "tags") }}
+    {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "{{ .Section }}",
+        "item": "{{ .Site.BaseURL }}{{ .Section }}"
+    }
+    {{ if ne (trim (replace .Permalink .Site.BaseURL "") "/") .Section }},
+    {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "{{ .Title }}",
+        "item": "{{ .Permalink }}"
+    }
+    {{ end }}
+    {{ else if eq .Type "posts" }}
+    {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "{{ .Section }}",
+        "item": "{{ .Site.BaseURL }}{{ .Section }}"
+    },
+    {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "{{ .Title }}",
+        "item": "{{ .Permalink }}"
+    }
+    {{ end }}
+    ]
+}
+</script>
 
 <script type="application/ld+json">
-    {
-      "@context": "http://schema.org",
-      "@type": "Organization",
-      "name": "{{ .Site.Params.author }}",
-      "url": "{{ .Site.BaseURL }}",
-      "logo": "{{ .Site.BaseURL }}{{ .Site.Params.header.logo }}",
-      {{ with .Site.Params.sameAs }}"sameAs": {{ . }}{{ end }},
-      "contactPoint": {
+{
+    "@context": "http://schema.org",
+    "@type": "Organization",
+    "name": "{{ .Site.Params.author }}",
+    "url": "{{ .Site.BaseURL }}",
+    "logo": "{{ .Site.BaseURL }}{{ .Site.Params.header.logo }}",
+    {{ with .Site.Params.sameAs }}"sameAs": {{ . }}{{ end }},
+    "contactPoint": {
         "@type": "ContactPoint",
         "contactType": "Owner",
         "email": "{{ .Site.Params.contacts.contactPoint }}"
-      }
     }
+}
 </script>
 <!-- finish schema.org integration -->
 
