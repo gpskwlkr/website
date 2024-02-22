@@ -10,13 +10,18 @@
     content="{{ with .Params.Keywords }}{{ range $index, $keyword := . }}{{ if $index }}, {{ end }}{{ $keyword }}{{ end }}{{ else }}{{ range $index, $keyword := $.Site.Params.Keywords }}{{ if $index }}, {{ end }}{{ $keyword }}{{ end }}{{ end }}">
 <meta name="robots" content="index,follow">
 <meta property="og:title" content="{{ .Title }}">
+{{ if .IsPage }}
+<meta property="og:type" content="article">
+{{ else }}
 <meta property="og:type" content="website">
+{{ end }}
 <meta property="og:url" content="{{ .Permalink }}">
 {{ if .IsPage }}
 <meta property="og:description" content="{{ .Description }}">
 {{ else }}
 <meta property="og:description" content="{{ .Site.Params.Description }}">
 {{ end }}
+<meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://vercel-og-umber.vercel.app/api/og?title={{ .Title }}">
 <meta property="twitter:image" content="https://vercel-og-umber.vercel.app/api/og?title={{ .Title }}">
 <meta property="twitter:image:src" content="https://vercel-og-umber.vercel.app/api/og?title={{ .Title }}">
