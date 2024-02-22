@@ -1,6 +1,6 @@
 baseURL: https://anakidze.dev/
 languageCode: en-us
-title: "Giorgi Anakidze | Tech Geek"
+title: "Giorgi Anakidze | Join me for the technological journey"
 author: "Giorgi Anakidze"
 copyright: "Giorgi Anakidze"
 paginate: 10
@@ -46,7 +46,7 @@ params:
   author: "Giorgi Anakidze"
   enable_toc: true
   contacts:
-      contactPoint: "giorgi.anakidze@outlook.com"
+    contactPoint: "giorgi.anakidze@outlook.com"
   enable_collapsible_toc: true
   enable_collapsible_changelogs: false
   enable_math: true
@@ -54,8 +54,8 @@ params:
   color_scheme: "dark"
   contentTypeName: "posts"
   adSenseId: "{{GOOGLE_ADSENSE_ID}}"
-  description: ".NET • MSSQL • Linux • Rust • GoLang"
-  meta_description: ".NET • MSSQL • Linux • Rust • GoLang"
+  description: "Personal blog exploring various topics such as .NET, MSSQL, Linux, Rust, Golang, etc."
+  meta_description: "Personal blog exploring various topics such as .NET, MSSQL, Linux, Rust, Golang, etc."
   keywords:
     - programming
     - technology
