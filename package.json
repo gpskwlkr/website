@@ -1,14 +1,10 @@
 {
   "comments": {
     "dependencies": {},
-    "devDependencies": {
-      "@builder.io/partytown": "project"
-    }
+    "devDependencies": {}
   },
   "dependencies": {},
-  "devDependencies": {
-    "@builder.io/partytown": "^0.8.0"
-  },
+  "devDependencies": {},
   "name": "anakidze.dev",
   "version": "0.1.0"
 }
