@@ -43,10 +43,18 @@
     content="{{ site.Params.meta_description }}"
 />
 <meta property="twitter:card" content="summary_large_image" />
+<meta
+    name="google-adsense-account"
+    content="ca-pub-{{ site.Params.adSenseId }}"
+/>
 
 <link rel="canonical" href="{{ .Permalink }}" />
+{{ with .OutputFormats.Get "rss" -}}
+    {{ printf `<link rel=%q type=%q href=%q title=%q>` .Rel .MediaType.Type .Permalink site.Title | safeHTML }}
+{{ end }}
+<link rel="shortcut icon" href="{{ "favicon.ico" | relURL }}"> {{ partialCached "css.html" . }} 
 
-<link rel="shortcut icon" href="{{ "favicon.ico" | relURL }}"> {{ partialCached "css.html" . }} {{ if .Params.katex}}{{ partial "katex.html" . }}{{ end }}
+{{ if .Params.katex}}{{ partial "katex.html" . }}{{ end }}
 
 <!-- schema.org integration -->
 <script type="application/ld+json">
