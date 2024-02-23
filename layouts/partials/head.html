@@ -111,16 +111,16 @@
         "position": 1,
         "name": "Home",
         "item": "{{ .Site.BaseURL }}"
-    },
+    }
     {{ if or (eq .Type "categories") (eq .Type "tags") }}
-    {
+    ,{
         "@type": "ListItem",
         "position": 2,
         "name": "{{ .Section }}",
         "item": "{{ .Site.BaseURL }}{{ .Section }}"
     }
     {{ if ne (trim (replace .Permalink .Site.BaseURL "") "/") .Section }},
-    {
+    ,{
         "@type": "ListItem",
         "position": 3,
         "name": "{{ .Title }}",
@@ -128,7 +128,7 @@
     }
     {{ end }}
     {{ else if eq .Type "posts" }}
-    {
+    ,{
         "@type": "ListItem",
         "position": 2,
         "name": "{{ .Section }}",
