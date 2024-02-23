@@ -95,7 +95,7 @@
     },
     "description": "{{ .Description }}",
     "articleBody": "{{ .Content }}",
-    "keywords": {{ with .Params.keywords }}  "{{ delimit . ", " }}" {{ end }},
+    "keywords": {{ with .Params.keywords }}  "{{ delimit . ", " }}" {{ else }} "" {{ end }},
     "datePublished": "{{ .Date }}",
     "wordCount": "{{ .WordCount }}"
 }
