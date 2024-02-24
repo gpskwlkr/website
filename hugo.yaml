@@ -100,7 +100,7 @@ params:
     - game development
     - embedded systems
   header:
-    logo: "logo_new.png"
+    logo: "logo.png"
   footer:
     since: 2024
     poweredby: true
@@ -122,6 +122,14 @@ params:
     - "https://github.com/gpskwlkr"
     - "https://www.linkedin.com/in/giorgi-anakidze/"
     - "https://twitter.com/gpskwlkr_"
+
+languages:
+  en:
+    languageName: "English"
+    weight: 1
+  de:
+    languageName: "Deutsch"
+    weight: 2
 
 menu:
   main:
@@ -153,15 +161,3 @@ menu:
 services:
   googleAnalytics:
     ID: "{{GOOGLE_ANALYTICS_ID}}"
-
-module:
-  mounts:
-    - source: "assets"
-      target: "assets"
-    - source: "node_modules/@builder.io/partytown/lib/partytown.js"
-      target: "assets/js/partytown.js"
-    - source: "static"
-      target: "static"
-    - source: "node_modules/@builder.io/partytown/lib"
-      target: "static/~partytown"
-      excludeFiles: "debug"

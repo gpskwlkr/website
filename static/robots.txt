@@ -2,4 +2,3 @@ Sitemap: https://anakidze.dev/sitemap.xml
 
 User-Agent: *
 Allow: /index.xml
-Disallow: /~partytown/

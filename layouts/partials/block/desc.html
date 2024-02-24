@@ -1,18 +1,23 @@
 {{ $loading := .Params.loading | default "lazy" }}
 {{ $altText := .Params.CoverImageAltText | default "Default Alt Text" }}
 {{ with .Params.coverimage }}
-{{ $imgHTML :=  `<img src="%s" alt="%s" loading=%q  width='600' height='300' style='display: block; float: none; margin-left: auto; margin-right: auto;'>`}}
-{{ printf $imgHTML . $altText $loading | safeHTML }}
+  <a href="{{ $.Page.Permalink }}">
+    <img src="{{ . }}" alt="{{ $altText }}" loading="{{ $loading }}" width="600" height="300" style="display: block; margin: 0 auto;">
+  </a>
 {{ end }}
 
 {{ with .Description }}
-  <h3 class="my-4 text-large text-slate-600 dark:text-slate-300">
-    {{ . | $.Page.RenderString }}
-  </h3>
+  <a href="{{ $.Page.Permalink }}">
+    <h3 class="my-4 text-large text-slate-600 dark:text-slate-300">
+      {{ . | $.Page.RenderString }}
+    </h3>
+  </a>
 {{ else }}
   {{ if .Truncated }}
-  <h3 class="my-4 text-large text-slate-600 dark:text-slate-300">
-    {{ .Summary }}
-  </h3>
+  <a href="{{ $.Page.Permalink }}">
+    <h3 class="my-4 text-large text-slate-600 dark:text-slate-300">
+      {{ .Summary }}
+    </h3>
+  </a>
   {{ end }}
 {{ end }}
