@@ -50,6 +50,8 @@
     name="google-adsense-account"
     content="ca-pub-{{ site.Params.adSenseId }}"
 />
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-{{ site.Params.adSenseId }}"
+     crossorigin="anonymous"></script>
 
 <link rel="canonical" href="{{ .Permalink }}" />
 {{ with .OutputFormats.Get "rss" -}}
