@@ -1,59 +1,59 @@
-<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 {{ if and (.IsPage) (not .Params.UseDefaultDescription) }}
 {{- $description := .Description | truncate 150 }}
-<meta name="description" content="{{ $description }}" />
+<meta name="description" content="{{ $description }}">
 {{ else }}
 {{- $description := site.Params.meta_description | truncate 150 }}
-<meta name="description" content="{{ site.Params.meta_description }}" />
+<meta name="description" content="{{ site.Params.meta_description }}">
 {{ end }}
-<meta name="author" content="Giorgi Anakidze" />
+<meta name="author" content="Giorgi Anakidze">
 <meta
     name="keywords"
     content="{{ with .Params.Keywords }}{{ range $index, $keyword := . }}{{ if $index }}, {{ end }}{{ $keyword }}{{ end }}{{ else }}{{ range $index, $keyword := $.Site.Params.Keywords }}{{ if $index }}, {{ end }}{{ $keyword }}{{ end }}{{ end }}"
-/>
-<meta name="robots" content="index,follow" />
-<meta property="og:title" content="{{ .Title }}" />
+>
+<meta name="robots" content="index,follow">
+<meta property="og:title" content="{{ .Title }}">
 {{ if .IsPage }}
-<meta property="og:type" content="article" />
+<meta property="og:type" content="article">
 {{ else }}
-<meta property="og:type" content="website" />
+<meta property="og:type" content="website">
 {{ end }}
-<meta property="og:url" content="{{ .Permalink }}" />
+<meta property="og:url" content="{{ .Permalink }}">
 {{ if .IsPage }}
-<meta property="og:description" content="{{ .Description }}" />
+<meta property="og:description" content="{{ .Description }}">
 {{ else }}
-<meta property="og:description" content="{{ .Site.Params.Description }}" />
+<meta property="og:description" content="{{ .Site.Params.Description }}">
 {{ end }}
-<meta property="og:locale" content="en_US" />
+<meta property="og:locale" content="en_US">
 <meta
     property="og:image"
     content="https://vercel-og-umber.vercel.app/api/og?title={{ .Title }}"
-/>
+>
 <meta
     property="twitter:image"
     content="https://vercel-og-umber.vercel.app/api/og?title={{ .Title }}"
-/>
+>
 <meta
     property="twitter:image:src"
     content="https://vercel-og-umber.vercel.app/api/og?title={{ .Title }}"
-/>
-<meta property="twitter:site" content="@gpskwlkr_" />
-<meta property="twitter:creator" content="@gpskwlkr_" />
+>
+<meta property="twitter:site" content="@gpskwlkr_">
+<meta property="twitter:creator" content="@gpskwlkr_">
 <meta
     property="twitter:description"
     content="{{ site.Params.meta_description }}"
-/>
-<meta property="twitter:card" content="summary_large_image" />
+>
+<meta property="twitter:card" content="summary_large_image">
 <meta
     name="google-adsense-account"
     content="ca-pub-{{ site.Params.adSenseId }}"
-/>
+>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-{{ site.Params.adSenseId }}"
-     crossorigin="anonymous"></script>
+    crossorigin="anonymous"></script>
 
-<link rel="canonical" href="{{ .Permalink }}" />
+<link rel="canonical" href="{{ .Permalink }}">
 {{ with .OutputFormats.Get "rss" -}}
     {{ printf `<link rel=%q type=%q href=%q title=%q>` .Rel .MediaType.Type .Permalink site.Title | safeHTML }}
 {{ end }}
