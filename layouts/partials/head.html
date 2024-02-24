@@ -1,7 +1,7 @@
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-{{ if .IsPage }}
+{{ if and (.IsPage) (not .Params.UseDefaultDescription) }}
 {{- $description := .Description | truncate 150 }}
 <meta name="description" content="{{ $description }}" />
 {{ else }}

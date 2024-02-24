@@ -5,7 +5,8 @@ draft = false
 showPublicationDate = false 
 showReadingTime = false 
 toc = false 
-comments = false 
+comments = false
+useDefaultDescription = true
 +++
 
 Giorgi Anakidze operates the https://anakidze.dev website, which provides the SERVICE.

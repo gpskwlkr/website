@@ -6,6 +6,7 @@ showPublicationDate = false
 showReadingTime = false 
 toc = false 
 comments = false
+useDefaultDescription = true
 +++
 
 Please read these Terms of Service (“Terms”, “Terms of Service”) carefully before using the https://anakidze.dev website (the “Service”) operated by Giorgi Anakidze (“us”, “we”, or “our”).
