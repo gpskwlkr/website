@@ -13,4 +13,4 @@ keywords = []
 
 > Still working on a proper about page.
 
-At this point, there's only a [Telegram channel](https://t.me/anakidzedev) with comments and chat available, where you can contact me, discuss the articles or any other question you have.
+At this point, there's a [Discord](https://discord.gg/9SNyRghp) and [Telegram channel](https://t.me/anakidzedev) with comments and chat available, where you can contact me, discuss the articles or any other question you have.
