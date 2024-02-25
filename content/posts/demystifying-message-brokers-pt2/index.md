@@ -13,9 +13,10 @@ description = "In the previous part we've talked about message brokers in genera
 coverImage="/images/20-minute-adventure.webp"
 coverImageAltText="Cartoon illustration featuring characters from 'Rick and Morty' engaged in a humorous exchange about a '20-minute adventure'"
 slug = "demystifying-message-brokers-pt2"
+loading = "eager"
 +++
 
-{{<img src="/images/20-minute-adventure.webp" alt="Cartoon illustration featuring characters from 'Rick and Morty' engaged in a humorous exchange about a '20-minute adventure'" >}} <br>
+{{<img loading="eager" src="/images/20-minute-adventure.webp" alt="Cartoon illustration featuring characters from 'Rick and Morty' engaged in a humorous exchange about a '20-minute adventure'" >}} <br>
 
 In the [previous Part](/posts/demystifying-message-brokers-pt1) we've talked about message brokers in general and I hope you got a brief understanding of how they work and why you'd need them. In this article, we're going to dive deeper and explore one of them - **RabbitMQ** and we'll be using C# for this purposes.
 

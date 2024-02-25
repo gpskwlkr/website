@@ -12,10 +12,9 @@ keywords = ["TIOBE index", "Programming language rankings", "Language popularity
 description = "Ranking wars have been with us all the time. There's a never ending paradigm of \"Best frameworks for X\" or similar questions, but one thing that has been with us from 2000 to this day is - TIOBE Index."
 coverImage = "/images/tiobe.webp"
 coverImageAltText = "A meme where person wants to use some programming language but TIOBE stops them"
-loading = "eager"
 +++
 
-{{<img loading="eager" src="/images/tiobe.webp" align="center" alt="A meme where person wants to use some programming language but TIOBE stops them">}} <br>
+{{<img src="/images/tiobe.webp" align="center" alt="A meme where person wants to use some programming language but TIOBE stops them">}} <br>
 
 Ranking wars have been with us all the time. There's a never ending paradigm of "Best frameworks for X" or similar questions, but one thing that has been with us from 2000 to this day is - [TIOBE](https://www.tiobe.com/tiobe-index/) Index. With the recent news, which is Golang moving up the ladder in the same index, new hype was launched. There's nothing particularly wrong with TIOBE existing, it can cause some damage to beginners interpreting such lists. I could say it even for myself, I remember when I first started, I used to search a lot of the similar material and being influenced by them, I'm pretty sure many of readers could recognize themselves in this behavior. On the other hand, I'm pretty sure that simply saying _This is bad_ is not enough, which is why I decided to put my thoughts in an article, so let's dive into what's wrong with all of these hypetrain lists.
 
@@ -38,4 +37,3 @@ Now as we already explained how the ranking works, it's also crucial to say that
 ## Conclusion
 
 This is not the type of articles I was used to be doing, but I've been seeing it so much since Golang went to #8 on the ranking, I felt like I should've took this hot take. Only value this article could provide, would probably be for beginners in this industry to not trust any ranking blindfoldedly. It's crucial to always do your own research, think about your project's needs and only then, decide which language or framework to use.
-
