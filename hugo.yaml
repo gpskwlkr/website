@@ -149,18 +149,22 @@ menu:
       identifier: "categories"
       pageRef: "/categories"
       weight: 30
-    - name: "About"
-      identifier: "about"
-      pageRef: "/about"
-      weight: 40
     - name: "T&C"
       identifier: "terms-and-conditions"
       pageRef: "/terms-and-conditions"
-      weight: 50
+      weight: 40
     - name: "Privacy"
       identifier: "privacy"
       pageRef: "/privacy-policy"
+      weight: 50
+    - name: "About"
+      identifier: "about"
+      pageRef: "/about"
       weight: 60
+    - name: "Contact"
+      identifier: "contact"
+      pageRef: "/contact"
+      weight: 70
 
 services:
   googleAnalytics:
