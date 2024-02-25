@@ -31,10 +31,11 @@ As I've already mentioned, main metric used for TIOBE ranking are search engine 
 
 ## Fluctuations
 
-Now as we already explained how the ranking works, it's also crucial to say that it fluctuates too much. It might not be visible so much for languages that have been in this world for decades, but it still does. At this moment we're not even talking about market adoption, language maturity or job requirements, we're talking communities. Say for example, X language's community decides to go quiet for a bit of time and another language's community is like, we're alive, we're going to be posting every day about how awesome our language is. Does it really change anything on the market? If Brainfuck's community was as alive as Python's, would it change anything? No, cause the language is not applicable to real world needs, but the TIOBE rankings would be jumping like crazy. 
+Now as we already explained how the ranking works, it's also crucial to say that it fluctuates too much. It might not be visible so much for languages that have been in this world for decades, but it still does. At this moment we're not even talking about market adoption, language maturity or job requirements, we're talking communities. Say for example, X language's community decides to go quiet for a bit of time and another language's community is like, we're alive, we're going to be posting every day about how awesome our language is. Does it really change anything on the market? If Brainf\*\*\*'s community was as alive as Python's, would it change anything? No, cause the language is not applicable to real world needs, but the TIOBE rankings would be jumping like crazy.
 
-> If Brainfuck's community was as alive as Python's, would it change anything? No, cause the language is not applicable to real world needs.
+> If Brainf\*\*\*'s community was as alive as Python's, would it change anything? No, cause the language is not applicable to real world needs.
 
 ## Conclusion
 
 This is not the type of articles I was used to be doing, but I've been seeing it so much since Golang went to #8 on the ranking, I felt like I should've took this hot take. Only value this article could provide, would probably be for beginners in this industry to not trust any ranking blindfoldedly. It's crucial to always do your own research, think about your project's needs and only then, decide which language or framework to use.
+

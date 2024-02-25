@@ -1,6 +1,6 @@
 baseURL: https://anakidze.dev/
 languageCode: en-us
-title: "Giorgi Anakidze | Join me for the technological journey"
+title: "Giorgi Anakidze | Join me for the tech journey"
 author: "Giorgi Anakidze"
 copyright: "Giorgi Anakidze"
 paginate: 10
@@ -21,15 +21,15 @@ sitemap:
 
 outputs:
   home:
-  - html
-  - rss
+    - html
+    - rss
   section:
-  - html
-  - rss
+    - html
+    - rss
   taxonomy:
-  - html
+    - html
   term:
-  - html
+    - html
 
 markup:
   highlight:
@@ -161,3 +161,4 @@ menu:
 services:
   googleAnalytics:
     ID: "{{GOOGLE_ANALYTICS_ID}}"
+
