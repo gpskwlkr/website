@@ -118,6 +118,10 @@ params:
         title: "Twitter"
         icon: "brand-twitter"
         link: "https://twitter.com/gpskwlkr_"
+      - enabled: true
+        title: "Telegram Channel"
+        icon: "telegram"
+        link: "https://t.me/anakidzedev"
   sameAs:
     - "https://github.com/gpskwlkr"
     - "https://www.linkedin.com/in/giorgi-anakidze/"
@@ -161,4 +165,3 @@ menu:
 services:
   googleAnalytics:
     ID: "{{GOOGLE_ANALYTICS_ID}}"
-
