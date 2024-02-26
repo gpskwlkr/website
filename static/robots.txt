@@ -2,3 +2,9 @@ Sitemap: https://anakidze.dev/sitemap.xml
 
 User-Agent: *
 Allow: /index.xml
+Disallow: /tags/*
+Disallow: /tags
+Disallow: /categories
+Disallow: /categories/*
+Disallow: /privacy-policy
+Disallow: /terms-and-conditions
