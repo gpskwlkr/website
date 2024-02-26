@@ -9,4 +9,9 @@ Disallow: /categories/*
 Disallow: /privacy-policy
 Disallow: /terms-and-conditions
 Disallow: /series
+Disallow: /search
 Disallow: /de
+Disallow: http://anakidze.dev/
+Disallow: https://www.anakidze.dev/
+Disallow: http://www.anakidze.dev/
+Disallow: /cdn-cgi/zaraz
