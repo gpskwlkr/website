@@ -8,3 +8,5 @@ Disallow: /categories
 Disallow: /categories/*
 Disallow: /privacy-policy
 Disallow: /terms-and-conditions
+Disallow: /series
+Disallow: /de
