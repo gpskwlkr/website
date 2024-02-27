@@ -65,39 +65,29 @@ params:
   color_scheme: "dark"
   contentTypeName: "posts"
   adSenseId: "{{GOOGLE_ADSENSE_ID}}"
-  description: "Personal blog exploring various topics such as .NET, MSSQL, Linux, Rust, Golang, etc."
-  meta_description: "Personal blog exploring various topics such as .NET, MSSQL, Linux, Rust, Golang, etc."
+  description: "Master .NET, C#, F#, Rust, TypeScript, JavaScript, Linux, & Golang. Expert tutorials & insights to advance your programming skills."
+  meta_description: "Master .NET, C#, F#, Rust, TypeScript, JavaScript, Linux, & Golang. Expert tutorials & insights to advance your programming skills."
   keywords:
-    - programming
-    - technology
-    - databases
-    - c#
-    - mssql
-    - linux
-    - rust
-    - go (golang)
-    - development
-    - software engineering
-    - coding
-    - programming languages
-    - web development
-    - database management
-    - software architecture
-    - system administration
-    - operating systems
-    - cloud computing
-    - algorithms
-    - data structures
-    - code optimization
-    - version control
-    - devops
-    - api development
-    - frontend development
-    - backend development
-    - full-stack development
-    - mobile development
-    - game development
-    - embedded systems
+  - Advanced .NET Core features for enterprise applications
+  - Best practices for asynchronous programming in C#
+  - Functional programming paradigms in F# explained
+  - Optimizing performance with Rust programming language
+  - Building scalable web applications with TypeScript
+  - Linux system administration tips and tricks for developers
+  - Getting started with Golang concurrency patterns
+  - Securing .NET applications against common cyber threats
+  - Mastering object-oriented design patterns in C#
+  - Exploring the benefits of functional programming in TypeScript
+  - Rust web development frameworks comparison
+  - Effective debugging techniques in C# and .NET environment
+  - Deploying containerized applications on Linux servers
+  - Implementing microservices architecture with Golang
+  - TypeScript for front-end development Beyond basics
+  - C# performance optimization strategies for large-scale projects
+  - Learning Linux command line essentials for developers
+  - Golang web development best practices and tools
+  - Exploring functional programming concepts in TypeScript
+  - Rust programming language A comprehensive guide for beginners
   header:
     logo: "logo.png"
   footer:

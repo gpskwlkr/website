@@ -8,6 +8,7 @@ toc = true
 comments = true
 categories = ["Database development"]
 keywords = ["Whether you’re a hobbyist or a professional developer", "database", "AWS", "Azure", "Linode", "DigitalOcean", "Docker", "PlanetScale", "MySQL", "Cloudflare D1", "SQLite database", "Cloudflare Workers", "Xata", "PostgreSQL", "ElasticSearch", "Fauna", "document databases", "MongoDB", "JOIN operations", "FQL", "GraphQL API", "Neon", "Rust", "PostgreSQL", "server location", "serverless platform for MySQL", "SQLite database on the edge", "serverless relational database based on PostgreSQL and ElasticSearch", "serverless database created by ex Twitter engineers", "scaling PostgreSQL with a generous free tier"]
+summary = "5 Free Database Services for Testing Your Ideas: PlanetScale, Cloudflare D1, Xata, Fauna, Neon - Choose the Best Fit for Your Project!"
 description = "Explore 5 free database services ideal for testing your projects, from PlanetScale's MySQL platform to Cloudflare D1's SQLite edge database. Discover Xata's PostgreSQL with ElasticSearch, Fauna's serverless option, and Neon's Rust-based PostgreSQL scaling. Make the right choice for your needs! 🚀"
 coverImage = "/images/database.webp"
 coverImageAltText = "A general photo of a database setup, possibly showing servers, storage units, and networking equipment"

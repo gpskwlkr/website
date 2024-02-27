@@ -8,6 +8,7 @@ toc = true
 comments = true
 categories = [".NET"]
 description = "In the world of microservices, message brokers are like the party storytellers, ensuring messages reach their destination smoothly without everyone shouting over each other. They include publishers, consumers, and topics for organizing messages, offering flexible distribution methods like point-to-point and publish/subscribe. While REST APIs are common, message brokers provide perks like guaranteed message delivery and better system performance 🚀"
+summary = "Boost your microservices confidence with insights on message brokers: RabbitMQ, Apache Kafka. Dive into point-to-point, publish/subscribe messaging."
 keywords = ["RabbitMQ","message brokers","microservices and message brokers", "rabbitmq installation guide", "fault tolerance in message processing", "publish/subscribe messaging explained", "comparison between message brokers and rest apis", "ensuring guaranteed message delivery", "benefits of apache kafka in distributed systems", "step-by-step guide to setting up rabbitmq", "developing a rabbitmq publisher application", "creating a rabbitmq consumer application", "understanding point to point messaging in rabbitmq", "optimizing system performance with message brokers"]
 aliases = [
     'demystifying-message-brokers-pt1',
@@ -17,7 +18,7 @@ coverImage = "/images/RabbitMQ_logo.webp"
 coverImageAltText = "RabbitMQ Logo"
 +++
 
-{{<img loading="eager" src="/images/RabbitMQ_logo.webp" alt="Cartoon illustration featuring characters from 'Rick and Morty' engaged in a humorous exchange about a '20-minute adventure'" >}} <br>
+{{<img loading="eager" src="/images/RabbitMQ_logo.webp" alt="RabbitMQ Logo" >}} <br>
 
 If you're into microservices, you'll eventually have to deal with message brokers. Getting ready for this switch will definitely boost your confidence and make you feel more prepared.
 

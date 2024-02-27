@@ -2,7 +2,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 {{ if and (.IsPage) (not .Params.UseDefaultDescription) }}
-{{- $description := .Description | truncate 150 }}
+{{- $description := .Summary }}
 <meta name="description" content="{{ $description }}">
 {{ else }}
 {{- $description := site.Params.meta_description | truncate 150 }}

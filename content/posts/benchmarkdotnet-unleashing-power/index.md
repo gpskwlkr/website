@@ -9,6 +9,7 @@ comments = true
 categories = [".NET"]
 keywords = ["BenchmarkDotnet introduction", "BenchmarkDotnet usage", "BenchmarkDotnet performance measurement", "Migrating .NET applications", "BenchmarkDotnet multiple versions testing", "BenchmarkDotnet setup management", "BenchmarkDotnet method identification", "BenchmarkDotnet baseline comparison", "Creating benchmarks with BenchmarkDotnet", "BenchmarkDotnet prerequisites installation", "BenchmarkDotnet benchmarks running", "BenchmarkDotnet benchmark results", "BenchmarkDotnet performance comparison"]
 description = "Turbocharge your .NET app's performance with BenchmarkDotnet! Easily compare method efficiency across different .NET framework versions. No more guesswork—just straightforward optimization. Dive in and give your app the speed boost it deserves! 🚀"
+summary = "Optimizing .NET Applications with BenchmarkDotnet: Targeting multiple versions, organizing setup, identifying benchmarked methods, and interpreting results."
 coverImage = "/images/benchmark_meme.webp"
 coverImageAltText = "A meme showing someone attempting to benchmark using Console.WriteLine"
 aliases = ['stop-guessing-start-measuring']
