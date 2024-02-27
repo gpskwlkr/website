@@ -41,10 +41,17 @@
 >
 <meta property="twitter:site" content="@gpskwlkr_">
 <meta property="twitter:creator" content="@gpskwlkr_">
+{{ if .IsPage }}
+<meta
+    property="twitter:description"
+    content="{{ .Summary }}"
+>
+{{ else }}
 <meta
     property="twitter:description"
     content="{{ site.Params.meta_description }}"
 >
+{{ end }}
 <meta property="twitter:card" content="summary_large_image">
 <meta
     name="google-adsense-account"
