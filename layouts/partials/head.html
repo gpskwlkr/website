@@ -22,7 +22,7 @@
 {{ end }}
 <meta property="og:url" content="{{ .Permalink }}">
 {{ if .IsPage }}
-<meta property="og:description" content="{{ .Description }}">
+<meta property="og:description" content="{{ .Summary }}">
 {{ else }}
 <meta property="og:description" content="{{ .Site.Params.Description }}">
 {{ end }}
