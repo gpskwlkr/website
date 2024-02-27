@@ -1,24 +1,84 @@
 +++
-title = 'Demystifying Message Brokers: Part 2 - RabbitMQ'
-date = 2024-02-24T08:04:05+04:00
-draft = false 
+title = 'Introduction to Message Brokers'
+date = 2024-02-27T11:35:25+04:00
+draft = false
 showPublicationDate = true
 showReadingTime = true
 toc = true
 comments = true
-tags = ["backend", "architecture"]
-categories = ["Guides", "Back End", "Architecture"]
-keywords = ["RabbitMQ", "RabbitMQ installation", "docker container for RabbitMQ", "C# RabbitMQ tutorial", "creating a publisher application", "creating a consumer application", "RabbitMQ basic setup", "RabbitMQ event-based consumer", "RabbitMQ message handling", "testing RabbitMQ applications", "real-world RabbitMQ usage", "microservices architecture with RabbitMQ"]
-description = "In the previous part we've talked about message brokers in general and I hope you got a brief understanding of how they work and why you'd need them. In this article, we're going to dive deeper and explore one of them - **RabbitMQ**."
-coverImage="/images/20-minute-adventure.webp"
-coverImageAltText="Cartoon illustration featuring characters from 'Rick and Morty' engaged in a humorous exchange about a '20-minute adventure'"
-slug = "demystifying-message-brokers-pt2"
-loading = "eager"
+categories = [".NET"]
+keywords = ["RabbitMQ","message brokers","microservices and message brokers", "rabbitmq installation guide", "fault tolerance in message processing", "publish/subscribe messaging explained", "comparison between message brokers and rest apis", "ensuring guaranteed message delivery", "benefits of apache kafka in distributed systems", "step-by-step guide to setting up rabbitmq", "developing a rabbitmq publisher application", "creating a rabbitmq consumer application", "understanding point to point messaging in rabbitmq", "optimizing system performance with message brokers"]
+aliases = [
+    'demystifying-message-brokers-pt1',
+    'demystifying-message-brokers-pt2'
+]
+coverImage = "/images/RabbitMQ_logo.webp"
 +++
 
-{{<img loading="eager" src="/images/20-minute-adventure.webp" alt="Cartoon illustration featuring characters from 'Rick and Morty' engaged in a humorous exchange about a '20-minute adventure'" >}} <br>
+{{<img loading="eager" src="/images/RabbitMQ_logo.webp" alt="Cartoon illustration featuring characters from 'Rick and Morty' engaged in a humorous exchange about a '20-minute adventure'" >}} <br>
 
-In the [previous Part](/posts/demystifying-message-brokers-pt1) we've talked about message brokers in general and I hope you got a brief understanding of how they work and why you'd need them. In this article, we're going to dive deeper and explore one of them - **RabbitMQ** and we'll be using C# for this purposes.
+If you're into microservices, you'll eventually have to deal with message brokers. Getting ready for this switch will definitely boost your confidence and make you feel more prepared.
+
+## What are message brokers?
+
+Let's start with simple, what even is a _message broker_? I'll try to make it easy to understand at this point. Let's take a party for example. Every person wants to share some story, but instead of everyone shouting over each other, we will have one designated storyteller. This person listens to all the stories and shares them one at a time with the entire group. This person is our message broker at this moment, ensuring that all stories reach the group without chaos.
+
+That's exactly how message brokers work, of course, there are more details into it, but it's their general concept.
+
+## Message broker components
+
+- **Publisher**/**Producer** - part of your project that sends message to a **Topic**. In **[Publish/subscribe](#publish-subscribe-messaging)** method (discussed below) they are generally called **Publishers**.
+- **Consumer**/**Subscriber** - part of your or maybe separate project that consumes messages sent by **Publisher** via subscribing to a certain **Topic**.
+- **Topic** - storage for all of your messages sent by **Publishers**.
+
+## Message broker models
+
+Since we've just mentioned details, let's dive into some of them. Message brokers offer two message distribution patterns, which are:
+
+- **Point to point messaging**
+- **Publish/subscribe messaging**
+
+Let's dig into each of them.
+
+### Point to point messaging
+
+{{<img src="/images/point-to-point.webp" alt="An image depicting a schema of point-to-point messaging">}}
+
+With **Point to point messaging** each message in the queue is sent only to one recipient and is consumed only once. This distribution pattern is usually used in systems which require one-to-one relationship, example of which could be financial transaction processing. In such cases, both, senders and recipients need a guarantee, that each payment will be sent once only.
+
+### Publish/subscribe messaging {#publish-subscribe-messaging}
+
+{{<img src="/images/publish-subscribe-messaging.webp" alt="An image illustrating the schema of publish-subscribe messaging">}}
+
+If you're using **Publish/subscribe messaging**, you may have one message consumed by multiple clients, or if using the right terms, subscribers. With this method, your producer publishes a message to a topic, where one or more subscribers might be waiting for it. This resembles one-to-many relationship, while one producer has many subscribers.
+
+## Message brokers vs REST APIs
+
+Since you're already working with back-end software, you're most likely familiar with **REST** APIs. Main question that you might be having, would be, why can't we use **REST** services instead of message brokers? Well, it turns out that you can and nobody is stopping you, but there are some caveats. You see, the reason for using message brokers is not just _we want to_. They bring a lot of good as well, and in terms of comparison with **REST** APIs, main advantage would be _fault tolerance_.
+
+### Sending a message to microservice with REST API
+
+Let's discuss a situation where you want to send some message to another microservice and you decide to use **REST** APIs. It might be working pretty good, but in this case you lack the same fault tolerance I told you about earlier. Your service might be running beautifully, have no bugs at all, but there's still a possibility that something goes wrong and your message will never reach destination. Later on you might be performing some checks on did the message reach the destination or if it's saved somewhere so that you could resend it to required service.
+
+### Sending a message using message brokers
+
+On the other hand, if you went with message brokers, you're way safer. Even if your app goes down, or anything else happens so that the service is unreachable, you can still be sure that once you spin up your project again, the message will be delivered right away. It doesn't even matter if you're using one-to-one or one-to-many relationship for your publisher and subscribers. Once your message got published and is added to a topic, you can be sure that whenever you require it, it will be available there. So it's a big win for message brokers.
+
+## Summing up advantages of using message brokers
+
+- **Guaranteed message delivery** - Even if your consumer/subscriber was offline, it will receive the message when it'll be back online.
+- **Increased system performance** - Since message brokers work asynchronously, main thread of the application will not be affected.
+- **Communicating between applications** - You can integrate communication between all applications even if they are written using different programming languages or frameworks.
+
+## Drawbacks of using message brokers
+
+- **Adaptation process** - There are multiple message brokers and different approaches of using them. You should be able to choose them wisely depending on your needs.
+- **Debugging difficulty** - Since we're adding new components to our architecture, debugging also becomes more difficult.
+
+## Most popular message brokers
+
+- **Apache Kafka** - Developed by [Apache Software Foundation](https://www.apache.org/) with initial release in 2011. Written in Java.
+- **RabbitMQ** - Initially developed by "Rabbit Technologies Ltd." in 2007, currently under [Pivotal Software](https://en.wikipedia.org/wiki/Pivotal_Software). Written in Erlang.
 
 ## Installing RabbitMQ
 
@@ -54,7 +114,7 @@ docker ps
 
 You should see your RabbitMQ container running, which means we're good to go.
 
-## Creating the publisher application
+### Creating the publisher application
 
 As you already know, message brokers require at least two applications to have them work properly, one of which will be a producer (publisher) and the second one would be a client (consumer).
 
@@ -106,7 +166,12 @@ channel.QueueDeclare(queue: "hello-world",
                      arguments: null);
 ```
 
-You don't really need to understand all the variables we're passing right now, but you'll need your queue name later when we'll be building our consumer application.
+Let's dive into what's going on.
+
+- `durable`: RabbitMQ queues can be or not be durable. Which means, it will survive broker restart.
+- `exclusive`: This parameter controls whether the queue should be exclusive. If set to `true`, queue will be deleted once the connection is dropped.
+- `autoDelete`: If you want your queue to automatically delete itself once last consumer unsubscribes, you can set this parameter to `true`.
+- `arguments`: Optional arguments, you can see some of them in the [docs](https://www.rabbitmq.com/docs/queues#optional-arguments).
 
 > Creating a queue in RabbitMQ is an idempotent action, so a queue will only be created if it doesn't exist, otherwise, it'll just ignore it without any error.
 
@@ -127,6 +192,8 @@ Console.WriteLine($"Message successfully sent, text - {message}");
 ```
 
 Messages in RabbitMQ are transported as byte arrays, so we need to turn our string into one. One thing to notice here is the `routingKey`, publishers use it to describe the message's destination and consumers use it to read only the messages that they need.
+
+> The routingKey specifies the destination queue for the message being published.
 
 At this point, if you run your code, you'll be able to see that a message has been successfully sent and you can verify it in the web UI. You could even read it there right away, but keep in mind that once the message has been read, it's being deleted from the queue, so you might need to resend it to read from the actual consumer.
 
@@ -161,7 +228,7 @@ channel.BasicPublish(exchange: string.Empty,
 Console.WriteLine($"Message successfully sent, text - {message}");
 ```
 
-## Creating the consumer application
+### Creating the consumer application
 
 Once you're done with your publisher application, you'd want to read the messages sent by it as well, for this purposes, we're going to use the consumer application, so let's first create it. We're going to be using the same commands we used to create the publisher application.
 
@@ -202,7 +269,7 @@ channel.QueueDeclare(queue: "hello-world",
 Console.WriteLine("Consumer waiting for messages...");
 ```
 
-> Note that queue name should be matching with the one you used while declaring it in the producer project.
+> Note that queue name and other parameters should be matching with the one you used while declaring it in the producer project.
 
 Once we have the basic setup done, we'll need to start actually reading messages and RabbitMQ does this through event handlers.
 
@@ -226,7 +293,7 @@ Let's have some deep dive into what's going on in here and how it all works.
 
 First, we're creating an event based consumer attached to our channel, which later on is using the `Received` event to track new messages. As I've already mentioned, messages are just byte arrays for RabbitMQ, so we need to decode it back into string. Later on, we just notify RabbitMQ that the message has been successfully consumed by our consumer instance and it's safe to delete it.
 
-## Testing interaction between our applications
+### Testing interaction between our applications
 
 If you run the `Publisher` application right now and follow-up by running your `Consumer` application, your console output will look like something similar to this
 
@@ -245,8 +312,12 @@ Consumer waiting for messages...
 Received a message - Hello!
 ```
 
-You can continue experimenting with it, or trying to run your producer multiple times and then see if all of your messages actually get consumed by your consumer application. That would be it for today and I'll most likely do another part covering RabbitMQ usage in a real world application with microservices architecture. Hope this article helped you better understand how to work with RabbitMQ.
+## Conclusion
+
+That would be it for today, Hope this article helped you better understand how to work with RabbitMQ and message brokers in general.
 
 <hr class="border-gray-300 dark:border-gray-600 my-4">
 
-Thank you for taking the time to read! :)
+Thank you for taking the time to read :)
+
+If you enjoyed the article, you're welcome to join the [Discord](https://discord.gg/9SNyRghp) community, or [Telegram](https://t.me/anakidzedev) channel.

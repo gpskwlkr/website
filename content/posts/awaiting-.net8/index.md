@@ -1,15 +1,14 @@
 +++
-title = 'Awaiting .NET 8: A Look Back at the .NET Journey'
+title = '.NET Journey: Awaiting .NET 8'
 date = 2023-09-23T12:46:30+04:00
 draft = false
 showPublicationDate = true
 showReadingTime = true
 toc = true
 comments = true
-tags = ["dotnet", "csharp", ".net", "backend", "news"]
-categories = ["Back End", "News"]
+categories = ["General"]
 keywords = [" .NET evolution", "C# development", ".NET Framework history", ".NET 8 features", ".NET MAUI introduction", "Cross-platform .NET development", "Transformative journey of C# and .NET", "Milestones in .NET development", "Key features of .NET Framework 1.0", "Evolution of C# language", "Advantages of .NET 5 over previous versions", "Performance improvements in .NET 6/7", "Introduction to .NET MAUI for cross-platform GUI", "What to expect in .NET 8 release", "Native AOT for web applications in .NET 8", "Blazor and Entity Framework updates in .NET 8", "Common Language Runtime (CLR)", "Base Class Library (BCL)", "ASP.NET WebForms", "ADO.NET data access", "Windows Forms development", "Object-Oriented programming in C#", "Syntax simplicity in C#", "Garbage collection in C#", "Type-safety in C#", "Declarative programming with C# attributes", "Consolidation of .NET Core and .NET Framework in .NET 5", "Unified platform for different workloads in .NET 5", "Cross-platform support in .NET 5", "Performance improvements in .NET 6/7", "Cross-platform GUI development with .NET MAUI", "Native AOT compilation for web applications in .NET 8", "Blazor and Entity Framework updates in .NET 8"]
-description = "While the tech world awaits for .NET 8, it’s an opportune moment to take a step back and reflect on the transformative journey of C# and .NET."
+description = "Take a fun-filled rollercoaster ride through the history of C# and .NET, from their humble beginnings to the latest and greatest features in .NET 8. Join me as I reminisce about the old days, celebrate the changes along the way, and get hyped for what's coming next in the world of .NET development! 🚀"
 coverImage="/images/dotnet.webp"
 coverImageAltText="A purple background featuring white text that reads '.NET'"
 +++
@@ -73,4 +72,6 @@ Even though **.NET 8** is set to release in **November, 2023**, we already can t
 
 <hr class="border-gray-300 dark:border-gray-600 my-4">
 
-Thank you for taking the time to read! :)
+Thank you for taking the time to read :)
+
+If you enjoyed the article, you're welcome to join the [Discord](https://discord.gg/9SNyRghp) community, or [Telegram](https://t.me/anakidzedev) channel.

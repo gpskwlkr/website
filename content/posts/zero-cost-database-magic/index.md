@@ -6,10 +6,9 @@ showPublicationDate = true
 showReadingTime = true
 toc = true
 comments = true
-tags = ["neon", "cloudflare", "database", "backend"]
-categories = ["Database development", "Back End"]
+categories = ["Database development"]
 keywords = ["Whether you’re a hobbyist or a professional developer", "database", "AWS", "Azure", "Linode", "DigitalOcean", "Docker", "PlanetScale", "MySQL", "Cloudflare D1", "SQLite database", "Cloudflare Workers", "Xata", "PostgreSQL", "ElasticSearch", "Fauna", "document databases", "MongoDB", "JOIN operations", "FQL", "GraphQL API", "Neon", "Rust", "PostgreSQL", "server location", "serverless platform for MySQL", "SQLite database on the edge", "serverless relational database based on PostgreSQL and ElasticSearch", "serverless database created by ex Twitter engineers", "scaling PostgreSQL with a generous free tier"]
-description = "Whether you’re a hobbyist or a professional developer, at some point you’re going to need a database."
+description = "Explore 5 free database services ideal for testing your projects, from PlanetScale's MySQL platform to Cloudflare D1's SQLite edge database. Discover Xata's PostgreSQL with ElasticSearch, Fauna's serverless option, and Neon's Rust-based PostgreSQL scaling. Make the right choice for your needs! 🚀"
 coverImage = "/images/database.webp"
 coverImageAltText = "A general photo of a database setup, possibly showing servers, storage units, and networking equipment"
 +++
@@ -86,4 +85,6 @@ By far, **Neon** is my favourite and make sure to check it for yourself as well 
 
 <hr class="border-gray-300 dark:border-gray-600 my-4">
 
-Thank you for taking the time to read! :)
+Thank you for taking the time to read :)
+
+If you enjoyed the article, you're welcome to join the [Discord](https://discord.gg/9SNyRghp) community, or [Telegram](https://t.me/anakidzedev) channel.
